@@ -1,10 +1,9 @@
 import pykobo
 import pandas as pd
-from typing import Dict, List, Optional, Union, Tuple, Any, Generator
-from pykobo.form import KoboForm
+from typing import Dict, List, Tuple, Any, Generator
 from requests.exceptions import RequestException
 from .form_info import FormInfo
-
+from .submission_result import SubmissionResult
 
 class KoboToolboxClient:
     """A comprehensive client for interacting with KoboToolbox API using pykobo."""
@@ -39,42 +38,29 @@ class KoboToolboxClient:
     # ======================
     
     def get_all_forms(self) -> List[FormInfo]:
-        """
-        Get a list of all forms accessible with the current token.
-        """
+        """Get a list of all forms accessible with the current token."""
         try:
             forms = self.manager.get_forms()
-            form_info_list = []
-            
-            for form in forms:
-                uid = getattr(form, 'uid', '')
-                metadata = getattr(form, 'metadata', {})
-                name = metadata.get('name', f'Unnamed Form ({uid[:8]}...)')
-                
-                form_info_list.append(
-                    FormInfo(
-                        uid=uid,
-                        name=name,
-                        metadata=metadata
-                    )
+            return [
+                FormInfo(
+                    uid=getattr(form, 'uid', ''),
+                    name=getattr(form, 'metadata', {}).get('name', 'Unnamed Form'),
+                    metadata=getattr(form, 'metadata', {})
                 )
-                
-            return form_info_list
-            
+                for form in forms
+            ]
         except Exception as e:
             raise RuntimeError(f"Failed to fetch forms: {str(e)}")
     
     def get_form_details(self, form_uid: str) -> Dict[str, Any]:
-        """
-        Get detailed metadata about a specific form/asset.
-        """
+        """Get detailed metadata about a specific form/asset."""
         if not form_uid or not isinstance(form_uid, str):
             raise ValueError("form_uid must be a non-empty string")
         
         try:
             form = self.manager.get_form(form_uid)
             if form is None:
-                raise RuntimeError(f"Form with UID {form_uid} not found")
+                return {}
             return getattr(form, 'metadata', {})
         except Exception as e:
             raise RuntimeError(f"Failed to fetch form details: {str(e)}")
@@ -83,20 +69,26 @@ class KoboToolboxClient:
     # SUBMISSIONS ENDPOINTS
     # =====================
     
-    def get_submissions(
-        self,
-        form_uid: str,
-        include_repeats: bool = False,
-        join_repeats: bool = False
-    ) -> Union[pd.DataFrame, Tuple[pd.DataFrame, Dict[str, pd.DataFrame]]]:
-        """
-        Get submissions for a specific form.
-        """
+    def get_submissions(self, form_uid: str) -> pd.DataFrame:
+        """Get main submissions DataFrame for a specific form."""
+        return self._get_submissions_with_options(form_uid).main_data
+    
+    def get_submissions_with_repeats(self, form_uid: str) -> Tuple[pd.DataFrame, Dict[str, pd.DataFrame]]:
+        """Get main submissions DataFrame and repeat group DataFrames."""
+        result = self._get_submissions_with_options(form_uid)
+        return result.main_data, result.repeat_data
+    
+    def get_joined_submissions(self, form_uid: str) -> pd.DataFrame:
+        """Get submissions with repeat groups joined to main data."""
+        return self._get_submissions_with_options(form_uid).joined_data
+    
+    def _get_submissions_with_options(self, form_uid: str) -> 'SubmissionResult':
+        """Internal method to handle all submission retrieval options."""
         if not form_uid or not isinstance(form_uid, str):
             raise ValueError("form_uid must be a non-empty string")
         
         try:
-            form: KoboForm | None = self.manager.get_form(form_uid)
+            form = self.manager.get_form(form_uid)
             if form is None:
                 raise RuntimeError(f"Form with UID {form_uid} not found")
                 
@@ -106,18 +98,12 @@ class KoboToolboxClient:
                 raise RuntimeError(f"No data available for form {form_uid}")
             
             main_df = form.data.copy()
+            repeat_data = {}
             
-            if not include_repeats:
-                return main_df
-            
-            repeat_data: Dict[str, pd.DataFrame] = {}
             if hasattr(form, 'has_repeats') and form.has_repeats and hasattr(form, 'repeats'):
                 for repeat_name, repeat_df in form.repeats.items():
                     if repeat_df is not None:
                         repeat_data[repeat_name] = repeat_df.copy()
-            
-            if not join_repeats:
-                return main_df, repeat_data
             
             joined_df = main_df.copy()
             for repeat_name, repeat_df in repeat_data.items():
@@ -131,57 +117,36 @@ class KoboToolboxClient:
                         suffixes=(None, f'_{repeat_name}')
                     )
             
-            return joined_df
+            return SubmissionResult(main_df, repeat_data, joined_df)
             
         except RequestException as e:
-            raise RuntimeError(f"Network error while fetching data for form {form_uid}: {str(e)}")
+            raise RuntimeError(f"Network error while fetching data: {str(e)}")
         except Exception as e:
-            raise RuntimeError(f"Failed to fetch data for form {form_uid}: {str(e)}")
+            raise RuntimeError(f"Failed to fetch data: {str(e)}")
     
-    def get_all_submissions(
-        self,
-        form_uid: str,
-        batch_size: int = 1000,
-        **kwargs: Any
-    ) -> Generator[pd.DataFrame, None, None]:
-        """
-        Generator that yields all submissions in batches.
-        """
+    def get_all_submissions(self, form_uid: str) -> Generator[pd.DataFrame, None, None]:
+        """Generator that yields all submissions in batches."""
         offset = 0
+        batch_size = 1000
         while True:
-            batch = self.get_submissions(form_uid, **kwargs)
-            if isinstance(batch, tuple):
-                batch = batch[0]
+            batch = self.get_submissions(form_uid)
             if batch.empty:
                 break
             yield batch
             offset += batch_size
     
-    def export_form_data(
-        self,
-        form_uid: str,
-        output_format: str = 'csv',
-        output_path: Optional[str] = None,
-        **kwargs: Any
-    ) -> Optional[str]:
-        """
-        Export form data to a file.
-        """
-        if output_format not in ('csv', 'excel'):
-            raise ValueError("output_format must be 'csv' or 'excel'")
-        
-        data = self.get_submissions(form_uid, **kwargs)
-        if isinstance(data, tuple):
-            data = data[0]
-        
-        if output_path is None:
-            if output_format == 'csv':
-                return data.to_csv(index=False)
-            raise ValueError("Cannot return Excel data as string")
-        
-        if output_format == 'csv':
-            data.to_csv(output_path, index=False)
-        else:
-            data.to_excel(output_path, index=False)
-        
+    def export_form_data_to_csv(self, form_uid: str, output_path: str) -> str:
+        """Export form data to CSV file."""
+        data = self.get_submissions(form_uid)
+        data.to_csv(output_path, index=False)
         return output_path
+    
+    def export_form_data_to_excel(self, form_uid: str, output_path: str) -> str:
+        """Export form data to Excel file."""
+        data = self.get_submissions(form_uid)
+        data.to_excel(output_path, index=False)
+        return output_path
+    
+    def get_form_data_as_csv(self, form_uid: str) -> str:
+        """Get form data as CSV string."""
+        return self.get_submissions(form_uid).to_csv(index=False)
