@@ -30,8 +30,11 @@ class KoboToolboxClient:
                 api_version=self.api_version,
                 token=self.token
             )
-        except Exception as e:
+        except RequestException as e:
             raise ConnectionError(f"Failed to initialize KoboToolbox manager: {str(e)}")
+        except Exception as e:
+            # Catch any other unexpected errors during initialization
+            raise RuntimeError(f"An unexpected error occurred during KoboToolbox manager initialization: {str(e)}")
 
     # ======================
     # ASSETS/FORMS ENDPOINTS
@@ -49,8 +52,10 @@ class KoboToolboxClient:
                 )
                 for form in forms
             ]
+        except RequestException as e:
+            raise RuntimeError(f"Network error while fetching forms: {str(e)}")
         except Exception as e:
-            raise RuntimeError(f"Failed to fetch forms: {str(e)}")
+            raise RuntimeError(f"An unexpected error occurred while fetching forms: {str(e)}")
     
     def get_form_details(self, form_uid: str) -> Dict[str, Any]:
         """Get detailed metadata about a specific form/asset."""
@@ -62,8 +67,10 @@ class KoboToolboxClient:
             if form is None:
                 return {}
             return getattr(form, 'metadata', {})
+        except RequestException as e:
+            raise RuntimeError(f"Network error while fetching form details: {str(e)}")
         except Exception as e:
-            raise RuntimeError(f"Failed to fetch form details: {str(e)}")
+            raise RuntimeError(f"An unexpected error occurred while fetching form details: {str(e)}")
 
     # =====================
     # SUBMISSIONS ENDPOINTS
@@ -121,8 +128,10 @@ class KoboToolboxClient:
             
         except RequestException as e:
             raise RuntimeError(f"Network error while fetching data: {str(e)}")
+        except (AttributeError, KeyError, TypeError) as e:
+            raise RuntimeError(f"Data processing error after fetch: {str(e)}")
         except Exception as e:
-            raise RuntimeError(f"Failed to fetch data: {str(e)}")
+            raise RuntimeError(f"An unexpected error occurred while fetching submissions: {str(e)}")
     
     def get_all_submissions(self, form_uid: str) -> Generator[pd.DataFrame, None, None]:
         """Generator that yields all submissions in batches."""
