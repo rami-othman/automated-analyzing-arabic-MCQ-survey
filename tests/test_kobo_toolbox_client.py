@@ -23,6 +23,17 @@ class TestKoboToolboxClient(unittest.TestCase):
         self.mock_kobo_instance.get_data.return_value = {
             'results': [{
                 '_id': 1,
+                'formhub/uuid': '1e91a958e62d444faac93333f9fb7fc5',
+                'gender': 'option_0',
+                'age_group': 'option_1',
+                'governorate': 'option_0',
+                'education_level': 'option_2',
+                'employment_status': 'option_0',
+                'specialization': 'option_0',
+                'satisfaction_overall': 'option_1',
+                'satisfaction_access': 'option_2',
+                'satisfaction_support': 'option_1',
+                'suggestions': 'option_1',
                 'fruit_question': 'apple',
                 'color_question': 'red',
                 'multiple_choice_question': 'option_a option_c' # Raw data for select_multiple
@@ -33,27 +44,112 @@ class TestKoboToolboxClient(unittest.TestCase):
 
         self.mock_kobo_instance.get_choices.return_value = {
             'choices': {
-                'fruit_list': [
+                'fruit_question': [
                     {'name': 'apple', 'label': 'Apple'},
                     {'name': 'banana', 'label': 'Banana'}
                 ],
-                'color_list': [
+                'color_question': [
                     {'name': 'red', 'label': 'Red'},
                     {'name': 'blue', 'label': 'Blue'}
                 ],
-                'multi_list': [
+                'multiple_choice_question': [
                     {'name': 'option_a', 'label': 'Option A Text'},
                     {'name': 'option_b', 'label': 'Option B Text'},
                     {'name': 'option_c', 'label': 'Option C Text'}
+                ],
+                'gender': [
+                    {'name': 'option_0', 'label': 'ذكر'},
+                    {'name': 'option_1', 'label': 'أنثى'}
+                ],
+                'age_group': [
+                    {'name': 'option_0', 'label': 'أقل من 18'},
+                    {'name': 'option_1', 'label': '18-24'},
+                    {'name': 'option_2', 'label': '25-34'},
+                    {'name': 'option_3', 'label': '35-44'},
+                    {'name': 'option_4', 'label': '45 فأكثر'}
+                ],
+                'governorate': [
+                    {'name': 'option_0', 'label': 'دمشق'},
+                    {'name': 'option_1', 'label': 'ريف دمشق'},
+                    {'name': 'option_2', 'label': 'حلب'},
+                    {'name': 'option_3', 'label': 'حمص'},
+                    {'name': 'option_4', 'label': 'حماة'},
+                    {'name': 'option_5', 'label': 'اللاذقية'},
+                    {'name': 'option_6', 'label': 'طرطوس'},
+                    {'name': 'option_7', 'label': 'إدلب'},
+                    {'name': 'option_8', 'label': 'درعا'},
+                    {'name': 'option_9', 'label': 'القنيطرة'},
+                    {'name': 'option_10', 'label': 'دير الزور'},
+                    {'name': 'option_11', 'label': 'الحسكة'},
+                    {'name': 'option_12', 'label': 'الرقة'},
+                    {'name': 'option_13', 'label': 'السويداء'}
+                ],
+                'education_level': [
+                    {'name': 'option_0', 'label': 'ثانوي أو أقل'},
+                    {'name': 'option_1', 'label': 'دبلوم'},
+                    {'name': 'option_2', 'label': 'بكالوريوس'},
+                    {'name': 'option_3', 'label': 'ماجستير'},
+                    {'name': 'option_4', 'label': 'دكتوراه'}
+                ],
+                'employment_status': [
+                    {'name': 'option_0', 'label': 'طالب'},
+                    {'name': 'option_1', 'label': 'موظف'},
+                    {'name': 'option_2', 'label': 'باحث عن عمل'},
+                    {'name': 'option_3', 'label': 'عمل حر'},
+                    {'name': 'option_4', 'label': 'أخرى'}
+                ],
+                'specialization': [
+                    {'name': 'option_0', 'label': 'هندسة حاسوب'},
+                    {'name': 'option_1', 'label': 'ذكاء اصطناعي'},
+                    {'name': 'option_2', 'label': 'إدارة أعمال'},
+                    {'name': 'option_3', 'label': 'اقتصاد'},
+                    {'name': 'option_4', 'label': 'علوم اجتماعية'},
+                    {'name': 'option_5', 'label': 'تربية'},
+                    {'name': 'option_6', 'label': 'أخرى'}
+                ],
+                'satisfaction_overall': [
+                    {'name': 'option_0', 'label': 'راضٍ جدًا'},
+                    {'name': 'option_1', 'label': 'راضٍ'},
+                    {'name': 'option_2', 'label': 'محايد'},
+                    {'name': 'option_3', 'label': 'غير راضٍ'},
+                    {'name': 'option_4', 'label': 'غير راضٍ أبدًا'}
+                ],
+                'satisfaction_access': [
+                    {'name': 'option_0', 'label': 'سهل جدًا'},
+                    {'name': 'option_1', 'label': 'سهل'},
+                    {'name': 'option_2', 'label': 'متوسط'},
+                    {'name': 'option_3', 'label': 'صعب'},
+                    {'name': 'option_4', 'label': 'صعب جدًا'}
+                ],
+                'satisfaction_support': [
+                    {'name': 'option_0', 'label': 'ممتاز'},
+                    {'name': 'option_1', 'label': 'جيد جدًا'},
+                    {'name': 'option_2', 'label': 'جيد'},
+                    {'name': 'option_3', 'label': 'ضعيف'},
+                    {'name': 'option_4', 'label': 'سيء جدًا'}
+                ],
+                'suggestions': [
+                    {'name': 'option_0', 'label': 'نعم، لدي اقتراح'},
+                    {'name': 'option_1', 'label': 'لا يوجد لدي اقتراح'}
                 ]
             }
         }
 
         self.mock_kobo_instance.get_questions.return_value = {
             'questions': [
-                {'name': 'fruit_question', 'label': 'Favorite Fruit', 'type': 'select_one', 'select_from_list_name': 'fruit_list'},
-                {'name': 'color_question', 'label': 'Favorite Color', 'type': 'select_one', 'select_from_list_name': 'color_list'},
-                {'name': 'multiple_choice_question', 'label': 'Select Multiple', 'type': 'select_multiple', 'select_from_list_name': 'multi_list'}
+                {'name': 'fruit_question', 'label': 'Favorite Fruit', 'type': 'select_one', 'select_from_list_name': 'fruit_question'},
+                {'name': 'color_question', 'label': 'Favorite Color', 'type': 'select_one', 'select_from_list_name': 'color_question'},
+                {'name': 'multiple_choice_question', 'label': 'Select Multiple', 'type': 'select_multiple', 'select_from_list_name': 'multiple_choice_question'},
+                {'name': 'gender', 'label': 'ما هو جنسك؟', 'type': 'select_one', 'select_from_list_name': 'gender'},
+                {'name': 'age_group', 'label': 'ما هو فئتك العمرية؟', 'type': 'select_one', 'select_from_list_name': 'age_group'},
+                {'name': 'governorate', 'label': 'في أي محافظة تعيش؟', 'type': 'select_one', 'select_from_list_name': 'governorate'},
+                {'name': 'education_level', 'label': 'ما هو مستواك التعليمي؟', 'type': 'select_one', 'select_from_list_name': 'education_level'},
+                {'name': 'employment_status', 'label': 'ما هو وضعك الوظيفي؟', 'type': 'select_one', 'select_from_list_name': 'employment_status'},
+                {'name': 'specialization', 'label': 'ما هو تخصصك الأكاديمي؟', 'type': 'select_one', 'select_from_list_name': 'specialization'},
+                {'name': 'satisfaction_overall', 'label': 'كيف تقيم تجربتك العامة مع الخدمات التي حصلت عليها؟', 'type': 'select_one', 'select_from_list_name': 'satisfaction_overall'},
+                {'name': 'satisfaction_access', 'label': 'ما مدى سهولة الوصول إلى الخدمات المقدمة؟', 'type': 'select_one', 'select_from_list_name': 'satisfaction_access'},
+                {'name': 'satisfaction_support', 'label': 'ما مدى جودة الدعم الذي حصلت عليه أثناء استخدام الخدمة؟', 'type': 'select_one', 'select_from_list_name': 'satisfaction_support'},
+                {'name': 'suggestions', 'label': 'هل لديك اقتراحات لتحسين الخدمات؟', 'type': 'select_one', 'select_from_list_name': 'suggestions'}
             ]
         }
         
@@ -73,10 +169,8 @@ class TestKoboToolboxClient(unittest.TestCase):
                     continue # Skip these as they are handled by 'meta'
 
                 question_info = None
-                for q in questions.get('questions', []):
-                    if q.get('name') == key:
-                        question_info = q
-                        break
+                # Find question_info from the questions dict (which is keyed by question name)
+                question_info = questions.get('questions', {}).get(key)
 
                 if question_info:
                     labeled['results'][key] = {
@@ -89,14 +183,12 @@ class TestKoboToolboxClient(unittest.TestCase):
                         # Simulate the 'choices' sub-dictionary for select_multiple
                         choices_data = {}
                         selected_options = value.split(' ') if value else []
-                        list_name = question_info.get('select_from_list_name')
+                        list_name = question_info.get('list_name') # Use list_name from question_info
                         if list_name and list_name in choice_lists:
-                            for choice_item in choice_lists[list_name]:
-                                choice_name = choice_item['name']
-                                choice_label = choice_item['label']
-                                choices_data[choice_name] = {
-                                    'label': choice_label,
-                                    'answer_label': 'Yes' if choice_name in selected_options else 'No'
+                            for choice_code, choice_info in choice_lists[list_name].items():
+                                choices_data[choice_code] = {
+                                    'label': choice_info['label'],
+                                    'answer_label': 'Yes' if choice_code in selected_options else 'No'
                                 }
                         labeled['results'][key]['choices'] = choices_data
                 else:
@@ -120,12 +212,32 @@ class TestKoboToolboxClient(unittest.TestCase):
         self.assertIn('Favorite Fruit', df.columns)
         self.assertIn('Favorite Color', df.columns)
         self.assertIn('Select Multiple', df.columns)
+        self.assertIn('ما هو جنسك؟', df.columns)
+        self.assertIn('ما هو فئتك العمرية؟', df.columns)
+        self.assertIn('في أي محافظة تعيش؟', df.columns)
+        self.assertIn('ما هو مستواك التعليمي؟', df.columns)
+        self.assertIn('ما هو وضعك الوظيفي؟', df.columns)
+        self.assertIn('ما هو تخصصك الأكاديمي؟', df.columns)
+        self.assertIn('كيف تقيم تجربتك العامة مع الخدمات التي حصلت عليها؟', df.columns)
+        self.assertIn('ما مدى سهولة الوصول إلى الخدمات المقدمة؟', df.columns)
+        self.assertIn('ما مدى جودة الدعم الذي حصلت عليه أثناء استخدام الخدمة؟', df.columns)
+        self.assertIn('هل لديك اقتراحات لتحسين الخدمات؟', df.columns)
         self.assertIn('_id', df.columns) # Check for metadata
         self.assertIn('_submission_time', df.columns) # Check for metadata
         
         self.assertEqual(df.iloc[0]['Favorite Fruit'], 'Apple')
         self.assertEqual(df.iloc[0]['Favorite Color'], 'Red')
         self.assertEqual(df.iloc[0]['Select Multiple'], 'Option A Text, Option C Text')
+        self.assertEqual(df.iloc[0]['ما هو جنسك؟'], 'ذكر')
+        self.assertEqual(df.iloc[0]['ما هو فئتك العمرية؟'], '18-24')
+        self.assertEqual(df.iloc[0]['في أي محافظة تعيش؟'], 'دمشق')
+        self.assertEqual(df.iloc[0]['ما هو مستواك التعليمي؟'], 'بكالوريوس')
+        self.assertEqual(df.iloc[0]['ما هو وضعك الوظيفي؟'], 'طالب')
+        self.assertEqual(df.iloc[0]['ما هو تخصصك الأكاديمي؟'], 'هندسة حاسوب')
+        self.assertEqual(df.iloc[0]['كيف تقيم تجربتك العامة مع الخدمات التي حصلت عليها��'], 'راضٍ')
+        self.assertEqual(df.iloc[0]['ما مدى سهولة الوصول إلى الخدمات المقدمة؟'], 'متوسط')
+        self.assertEqual(df.iloc[0]['ما مدى جودة الدعم الذي حصلت عليه أثناء استخدام الخدمة؟'], 'جيد جدًا')
+        self.assertEqual(df.iloc[0]['هل لديك اقتراحات لتحسين الخدمات؟'], 'لا يوجد لدي اقتراح')
         self.assertEqual(df.iloc[0]['_id'], 1)
         self.assertEqual(df.iloc[0]['_submission_time'], '2025-07-09T05:52:30')
 

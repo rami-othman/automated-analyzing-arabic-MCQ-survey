@@ -56,86 +56,82 @@ class KoboToolboxClient:
     def get_joined_submissions(self, form_uid: str, use_labels: bool = True) -> pd.DataFrame:
         return self._get_submissions_with_options(form_uid, use_labels).joined_data
 
-    def _flatten_and_label_submission(self, labeled_result: Dict[str, Any], choice_lists: Dict[str, Any], questions: Dict[str, Any]) -> Dict[str, Any]:
-        flat_data = {}
-
-        # Add metadata fields directly
-        for meta_key, meta_value in labeled_result.get('meta', {}).items():
-            flat_data[meta_key] = meta_value
-
-        # Process actual question results
-        for question_name, question_data in labeled_result.get('results', {}).items():
-            question_label = question_data.get('label', question_name)
-            question_type = question_data.get('type')
-            answer_code = question_data.get('answer_code')
+    def _create_label_mapping(self, form_asset: Dict[str, Any]) -> Dict[str, Dict[str, str]]:
+        """
+        Creates a mapping from question names to their choice labels.
+        e.g. {'gender': {'option_0': 'Male', 'option_1': 'Female'}}
+        """
+        mapping = {}
+        try:
+            content = form_asset.get('content', {})
+            survey = content.get('survey', [])
+            choices = content.get('choices', [])
             
-            answer = None
-            if question_type and question_type.startswith('select_'):
-                # Find the correct choice list name for this question
-                choice_list_name = None
-                for q in questions.get('questions', []):
-                    if q.get('name') == question_name:
-                        choice_list_name = q.get('select_from_list_name')
-                        break
-                
-                if choice_list_name and choice_list_name in choice_lists:
-                    choices_map = {choice['name']: choice['label'] for choice in choice_lists[choice_list_name]}
+            # Create a map of choice lists, e.g. {'gender_choices': {'option_0': 'Male'}}
+            choice_map = {}
+            for choice in choices:
+                list_name = choice.get('list_name')
+                if list_name not in choice_map:
+                    choice_map[list_name] = {}
+                # The label is a list, get the first element
+                label = choice.get('label', [None])[0]
+                choice_map[list_name][choice.get('name')] = label
 
-                    if question_type == 'select_multiple':
-                        # The answer_code for select_multiple is a space-separated string of selected options
-                        selected_codes = answer_code.split(' ') if answer_code else []
-                        selected_labels = [choices_map.get(code, code) for code in selected_codes if code]
-                        answer = ', '.join(filter(None, selected_labels))
-                    elif answer_code is not None:
-                        # For select_one, map the single answer_code to its label
-                        answer = choices_map.get(answer_code, answer_code)
-                    else:
-                        answer = question_data.get('answer_label') # Fallback if answer_code is None
-                else:
-                    # Fallback if choice list not found or question type is not select
-                    answer = question_data.get('answer_label', answer_code)
-            else: # For non-select questions, use answer_label or answer_code
-                answer = question_data.get('answer_label', answer_code)
-            
-            flat_data[question_label] = answer
-        return flat_data
+            # Map question names to their corresponding choice list map
+            for question in survey:
+                if question.get('type', '').startswith('select_'):
+                    question_name = question.get('$xpath') # The real field name in submissions
+                    question_label = question.get('label', [question_name])[0]
+                    list_name = question.get('select_from_list_name')
+                    if list_name in choice_map:
+                        # We will need both name and label for mapping later
+                        mapping[question_name] = {
+                            "label": question_label,
+                            "choices": choice_map[list_name]
+                        }
+            return mapping
+        except (KeyError, IndexError) as e:
+            raise RuntimeError(f"Error creating label mapping from form asset: {e}")
 
     def _get_submissions_with_options(self, form_uid: str, use_labels: bool) -> 'SubmissionResult':
         if not form_uid or not isinstance(form_uid, str):
             raise ValueError("form_uid must be a non-empty string")
         
         try:
-            data = self.kobo.get_data(form_uid)
-            results = data.get('results', [])
-            if not results:
+            # Fetch raw submissions first
+            data = self.kobo.get_data(form_uid).get('results', [])
+            if not data:
                 return SubmissionResult(pd.DataFrame(), {}, pd.DataFrame())
 
-            if use_labels:
-                asset = self.kobo.get_asset(form_uid)
-                choice_lists = self.kobo.get_choices(asset).get('choices', {})
-                questions = self.kobo.get_questions(asset, unpack_multiples=True)
-                
-                processed_results = []
-                for result in results:
-                    labeled_result = self.kobo.label_result(
-                        unlabeled_result=result,
-                        choice_lists=choice_lists,
-                        questions=questions,
-                        unpack_multiples=True
-                    )
-                    flat_labeled_result = self._flatten_and_label_submission(labeled_result, choice_lists, questions)
-                    processed_results.append(flat_labeled_result)
-                
-                main_df = pd.DataFrame(processed_results)
-            else:
-                main_df = pd.DataFrame(results)
+            main_df = pd.DataFrame(data)
 
+            if use_labels:
+                # Fetch form definition to build the mapping
+                asset = self.kobo.get_asset(form_uid)
+                label_mapping = self._create_label_mapping(asset)
+                
+                # Create a copy to avoid modifying the original DataFrame while iterating
+                df_labeled = main_df.copy()
+                
+                # Store new column names to perform a single rename operation
+                column_rename_map = {}
+
+                for question_name, mapping_info in label_mapping.items():
+                    if question_name in df_labeled.columns:
+                        # Map the answer codes to labels
+                        df_labeled[question_name] = df_labeled[question_name].map(mapping_info['choices'])
+                        # Prepare to rename the column from its name to its label
+                        column_rename_map[question_name] = mapping_info['label']
+                
+                # Rename all columns at once for efficiency
+                df_labeled.rename(columns=column_rename_map, inplace=True)
+                main_df = df_labeled
+
+            # For now, repeat data and joined data are not handled
             return SubmissionResult(main_df, {}, main_df.copy())
             
         except RequestException as e:
             raise RuntimeError(f"Network error while fetching data: {str(e)}")
-        except (AttributeError, KeyError, TypeError) as e:
-            raise RuntimeError(f"Data processing error after fetch: {str(e)}")
         except Exception as e:
             raise RuntimeError(f"An unexpected error occurred while fetching submissions: {str(e)}")
 
