@@ -1,9 +1,16 @@
 from koboextractor import KoboExtractor
 import pandas as pd
-from typing import Dict, List, Tuple, Any, Generator
+from typing import Dict, List, Tuple, Any, Generator, TypedDict
 from requests.exceptions import RequestException
 from .form_info import FormInfo
 from .submission_result import SubmissionResult
+
+
+class MappingInfo(TypedDict):
+    """A type definition for the structure of the label mapping."""
+    label: str
+    choices: Dict[str, str]
+
 
 class KoboToolboxClient:
     """A comprehensive client for interacting with KoboToolbox API using kobo-extractor."""
@@ -56,35 +63,32 @@ class KoboToolboxClient:
     def get_joined_submissions(self, form_uid: str, use_labels: bool = True) -> pd.DataFrame:
         return self._get_submissions_with_options(form_uid, use_labels).joined_data
 
-    def _create_label_mapping(self, form_asset: Dict[str, Any]) -> Dict[str, Dict[str, str]]:
+    def _create_label_mapping(self, form_asset: Dict[str, Any]) -> Dict[str, MappingInfo]:
         """
         Creates a mapping from question names to their choice labels.
-        e.g. {'gender': {'option_0': 'Male', 'option_1': 'Female'}}
+        e.g. {'gender': {'label': 'Gender', 'choices': {'1': 'Male'}}}
         """
-        mapping = {}
+        mapping: Dict[str, MappingInfo] = {}
         try:
             content = form_asset.get('content', {})
             survey = content.get('survey', [])
             choices = content.get('choices', [])
             
-            # Create a map of choice lists, e.g. {'gender_choices': {'option_0': 'Male'}}
-            choice_map = {}
+            choice_map: Dict[str, Dict[str, str]] = {}
             for choice in choices:
                 list_name = choice.get('list_name')
                 if list_name not in choice_map:
                     choice_map[list_name] = {}
-                # The label is a list, get the first element
                 label = choice.get('label', [None])[0]
-                choice_map[list_name][choice.get('name')] = label
+                if label:  # Ensure label is not None
+                    choice_map[list_name][choice.get('name')] = label
 
-            # Map question names to their corresponding choice list map
             for question in survey:
                 if question.get('type', '').startswith('select_'):
-                    question_name = question.get('$xpath') # The real field name in submissions
+                    question_name = question.get('$xpath')
                     question_label = question.get('label', [question_name])[0]
                     list_name = question.get('select_from_list_name')
                     if list_name in choice_map:
-                        # We will need both name and label for mapping later
                         mapping[question_name] = {
                             "label": question_label,
                             "choices": choice_map[list_name]
@@ -98,7 +102,6 @@ class KoboToolboxClient:
             raise ValueError("form_uid must be a non-empty string")
         
         try:
-            # Fetch raw submissions first
             data = self.kobo.get_data(form_uid).get('results', [])
             if not data:
                 return SubmissionResult(pd.DataFrame(), {}, pd.DataFrame())
@@ -106,28 +109,20 @@ class KoboToolboxClient:
             main_df = pd.DataFrame(data)
 
             if use_labels:
-                # Fetch form definition to build the mapping
                 asset = self.kobo.get_asset(form_uid)
                 label_mapping = self._create_label_mapping(asset)
                 
-                # Create a copy to avoid modifying the original DataFrame while iterating
                 df_labeled = main_df.copy()
-                
-                # Store new column names to perform a single rename operation
                 column_rename_map = {}
 
                 for question_name, mapping_info in label_mapping.items():
                     if question_name in df_labeled.columns:
-                        # Map the answer codes to labels
                         df_labeled[question_name] = df_labeled[question_name].map(mapping_info['choices'])
-                        # Prepare to rename the column from its name to its label
                         column_rename_map[question_name] = mapping_info['label']
                 
-                # Rename all columns at once for efficiency
                 df_labeled.rename(columns=column_rename_map, inplace=True)
                 main_df = df_labeled
 
-            # For now, repeat data and joined data are not handled
             return SubmissionResult(main_df, {}, main_df.copy())
             
         except RequestException as e:
