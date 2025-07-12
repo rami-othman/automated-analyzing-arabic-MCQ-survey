@@ -26,6 +26,7 @@ debugpy==1.8.14
 decorator==5.2.1
 defusedxml==0.7.1
 distributed==2025.5.1
+dotenv==0.9.9
 et_xmlfile==2.0.0
 executing==2.2.0
 fastjsonschema==2.21.1
@@ -109,7 +110,7 @@ opt_einsum==3.4.0
 optree==0.16.0
 overrides==7.7.0
 packaging==25.0
-pandas==1.5.3
+pandas==2.3.1
 pandocfilters==1.5.1
 parso==0.8.4
 partd==1.4.2
@@ -124,9 +125,10 @@ pure_eval==0.2.3
 pyarrow==20.0.0
 pycparser==2.22
 Pygments==2.19.2
-pykobo==0.1.6
 pyparsing==3.2.3
+python-bidi==0.6.6
 python-dateutil==2.9.0.post0
+python-dotenv==1.1.1
 python-json-logger==3.3.0
 pytz==2025.2
 PyWavelets==1.8.0
