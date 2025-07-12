@@ -9,6 +9,7 @@ from .submission_result import SubmissionResult
 class MappingInfo(TypedDict):
     """A type definition for the structure of the label mapping."""
     label: str
+    type: str  # 'select_one' or 'select_multiple'
     choices: Dict[str, str]
 
 
@@ -84,13 +85,15 @@ class KoboToolboxClient:
                     choice_map[list_name][choice.get('name')] = label
 
             for question in survey:
-                if question.get('type', '').startswith('select_'):
+                question_type = question.get('type', '')
+                if question_type.startswith('select_'):
                     question_name = question.get('$xpath')
                     question_label = question.get('label', [question_name])[0]
                     list_name = question.get('select_from_list_name')
                     if list_name in choice_map:
                         mapping[question_name] = {
                             "label": question_label,
+                            "type": question_type,
                             "choices": choice_map[list_name]
                         }
             return mapping
@@ -117,7 +120,23 @@ class KoboToolboxClient:
 
                 for question_name, mapping_info in label_mapping.items():
                     if question_name in df_labeled.columns:
-                        df_labeled[question_name] = df_labeled[question_name].map(mapping_info['choices'])
+                        choices = mapping_info['choices']
+                        # Handle multiple-choice questions differently
+                        if mapping_info['type'] == 'select_multiple':
+                            def map_multiple_choices(value):
+                                if pd.isna(value) or value == '':
+                                    return ''
+                                # Raw data for multi-select is space-separated
+                                answer_codes = str(value).split(' ')
+                                labels = [choices.get(code, code) for code in answer_codes]
+                                # Return as a clean, comma-separated string
+                                return ', '.join(labels)
+                            
+                            df_labeled[question_name] = df_labeled[question_name].apply(map_multiple_choices)
+                        else:
+                            # Handle single-choice questions
+                            df_labeled[question_name] = df_labeled[question_name].map(choices)
+                        
                         column_rename_map[question_name] = mapping_info['label']
                 
                 df_labeled.rename(columns=column_rename_map, inplace=True)
