@@ -1,0 +1,15 @@
+group_slugs:
+  - demo_grp
+  - participation_grp
+  - satisfaction_grp
+  - quality_grp
+  - inclusion_grp
+  - safety_grp
+  - schedule_grp
+  - preference_grp
+  - access_grp
+  - cfm_grp
+  - outcome_grp
+  - recommend_grp
+  - communication_grp
+  - misc_grp

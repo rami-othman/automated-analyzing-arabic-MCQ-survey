@@ -1,0 +1,154 @@
+questions:
+  q1_gender:
+    allowed_codes:
+    - '1'
+    - '2'
+    dtype: int
+  q2_age:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    dtype: int
+  q3_governorate:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    dtype: int
+  q4_education:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    dtype: int
+  q5_employment:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int
+  q6_disability:
+    allowed_codes: &id001
+    - '1'
+    - '2'
+    dtype: int
+  q7_participation:
+    allowed_codes: *id001
+    dtype: int
+  q8_overall_satisfaction:
+    allowed_codes: &id002
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int
+  q9_material_quality:
+    allowed_codes: *id002
+    dtype: int
+  q10_trainer_competence:
+    allowed_codes: *id002
+    dtype: int
+  q11_training_duration:
+    allowed_codes: *id002
+    dtype: int
+  q12_content_difficulty:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int
+  q13_safety:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int
+  q14_consulted:
+    allowed_codes: *id001
+    dtype: int
+  q15_info_complaints:
+    allowed_codes: *id001
+    dtype: int
+  q16_submitted_complaint:
+    allowed_codes: *id001
+    dtype: int
+  q17_complaint_handled:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    dtype: int
+  q18_skill_improvement:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int
+  q19_use_skills:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    dtype: int
+  q20_most_useful_aspect:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: multi
+  q21_biggest_challenge:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: multi
+  q22_gender_inclusion:
+    allowed_codes: &id003
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int
+  q23_disability_inclusion:
+    allowed_codes: *id003
+    dtype: int
+  q24_schedule_fit:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int
+  q25_recommend:
+    allowed_codes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    dtype: int

@@ -1,0 +1,2921 @@
+[
+  {
+    "name": "q1_gender__1",
+    "source": "q1_gender",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "ذكر",
+      "2": "أنثى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5263157894736842
+  },
+  {
+    "name": "q1_gender__2",
+    "source": "q1_gender",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "ذكر",
+      "2": "أنثى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5263157894736842
+  },
+  {
+    "name": "q1_gender__NA",
+    "source": "q1_gender",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "ذكر",
+      "2": "أنثى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q2_age__1",
+    "source": "q2_age",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "15-17",
+      "2": "18-24",
+      "3": "25-34",
+      "4": "35-44",
+      "5": "45-54",
+      "6": "55+"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9122807017543859
+  },
+  {
+    "name": "q2_age__2",
+    "source": "q2_age",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "15-17",
+      "2": "18-24",
+      "3": "25-34",
+      "4": "35-44",
+      "5": "45-54",
+      "6": "55+"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7719298245614035
+  },
+  {
+    "name": "q2_age__3",
+    "source": "q2_age",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "15-17",
+      "2": "18-24",
+      "3": "25-34",
+      "4": "35-44",
+      "5": "45-54",
+      "6": "55+"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6666666666666666
+  },
+  {
+    "name": "q2_age__4",
+    "source": "q2_age",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "15-17",
+      "2": "18-24",
+      "3": "25-34",
+      "4": "35-44",
+      "5": "45-54",
+      "6": "55+"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7894736842105263
+  },
+  {
+    "name": "q2_age__5",
+    "source": "q2_age",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "15-17",
+      "2": "18-24",
+      "3": "25-34",
+      "4": "35-44",
+      "5": "45-54",
+      "6": "55+"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9122807017543859
+  },
+  {
+    "name": "q2_age__6",
+    "source": "q2_age",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "15-17",
+      "2": "18-24",
+      "3": "25-34",
+      "4": "35-44",
+      "5": "45-54",
+      "6": "55+"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9473684210526315
+  },
+  {
+    "name": "q2_age__NA",
+    "source": "q2_age",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "15-17",
+      "2": "18-24",
+      "3": "25-34",
+      "4": "35-44",
+      "5": "45-54",
+      "6": "55+"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q3_governorate__1",
+    "source": "q3_governorate",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "القاهرة",
+      "2": "الإسكندرية",
+      "3": "أسوان",
+      "4": "الأقصر",
+      "5": "الجيزة",
+      "6": "سوهاج"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7894736842105263
+  },
+  {
+    "name": "q3_governorate__2",
+    "source": "q3_governorate",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "القاهرة",
+      "2": "الإسكندرية",
+      "3": "أسوان",
+      "4": "الأقصر",
+      "5": "الجيزة",
+      "6": "سوهاج"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8596491228070176
+  },
+  {
+    "name": "q3_governorate__3",
+    "source": "q3_governorate",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "القاهرة",
+      "2": "الإسكندرية",
+      "3": "أسوان",
+      "4": "الأقصر",
+      "5": "الجيزة",
+      "6": "سوهاج"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7368421052631579
+  },
+  {
+    "name": "q3_governorate__4",
+    "source": "q3_governorate",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "القاهرة",
+      "2": "الإسكندرية",
+      "3": "أسوان",
+      "4": "الأقصر",
+      "5": "الجيزة",
+      "6": "سوهاج"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8421052631578947
+  },
+  {
+    "name": "q3_governorate__5",
+    "source": "q3_governorate",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "القاهرة",
+      "2": "الإسكندرية",
+      "3": "أسوان",
+      "4": "الأقصر",
+      "5": "الجيزة",
+      "6": "سوهاج"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8421052631578947
+  },
+  {
+    "name": "q3_governorate__6",
+    "source": "q3_governorate",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "القاهرة",
+      "2": "الإسكندرية",
+      "3": "أسوان",
+      "4": "الأقصر",
+      "5": "الجيزة",
+      "6": "سوهاج"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9298245614035088
+  },
+  {
+    "name": "q3_governorate__NA",
+    "source": "q3_governorate",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "القاهرة",
+      "2": "الإسكندرية",
+      "3": "أسوان",
+      "4": "الأقصر",
+      "5": "الجيزة",
+      "6": "سوهاج"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q4_education__1",
+    "source": "q4_education",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "بدون تعليم",
+      "2": "ابتدائي",
+      "3": "إعدادي",
+      "4": "ثانوي",
+      "5": "جامعي",
+      "6": "دراسات عليا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9649122807017544
+  },
+  {
+    "name": "q4_education__2",
+    "source": "q4_education",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "بدون تعليم",
+      "2": "ابتدائي",
+      "3": "إعدادي",
+      "4": "ثانوي",
+      "5": "جامعي",
+      "6": "دراسات عليا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7719298245614035
+  },
+  {
+    "name": "q4_education__3",
+    "source": "q4_education",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "بدون تعليم",
+      "2": "ابتدائي",
+      "3": "إعدادي",
+      "4": "ثانوي",
+      "5": "جامعي",
+      "6": "دراسات عليا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8596491228070176
+  },
+  {
+    "name": "q4_education__4",
+    "source": "q4_education",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "بدون تعليم",
+      "2": "ابتدائي",
+      "3": "إعدادي",
+      "4": "ثانوي",
+      "5": "جامعي",
+      "6": "دراسات عليا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8771929824561403
+  },
+  {
+    "name": "q4_education__5",
+    "source": "q4_education",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "بدون تعليم",
+      "2": "ابتدائي",
+      "3": "إعدادي",
+      "4": "ثانوي",
+      "5": "جامعي",
+      "6": "دراسات عليا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6491228070175439
+  },
+  {
+    "name": "q4_education__6",
+    "source": "q4_education",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "بدون تعليم",
+      "2": "ابتدائي",
+      "3": "إعدادي",
+      "4": "ثانوي",
+      "5": "جامعي",
+      "6": "دراسات عليا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8771929824561403
+  },
+  {
+    "name": "q4_education__NA",
+    "source": "q4_education",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "بدون تعليم",
+      "2": "ابتدائي",
+      "3": "إعدادي",
+      "4": "ثانوي",
+      "5": "جامعي",
+      "6": "دراسات عليا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q5_employment__1",
+    "source": "q5_employment",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "متفرغ",
+      "2": "دوام كامل",
+      "3": "دوام جزئي",
+      "4": "طالب",
+      "5": "لا يعمل"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9122807017543859
+  },
+  {
+    "name": "q5_employment__2",
+    "source": "q5_employment",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "متفرغ",
+      "2": "دوام كامل",
+      "3": "دوام جزئي",
+      "4": "طالب",
+      "5": "لا يعمل"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7368421052631579
+  },
+  {
+    "name": "q5_employment__3",
+    "source": "q5_employment",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "متفرغ",
+      "2": "دوام كامل",
+      "3": "دوام جزئي",
+      "4": "طالب",
+      "5": "لا يعمل"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7017543859649122
+  },
+  {
+    "name": "q5_employment__4",
+    "source": "q5_employment",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "متفرغ",
+      "2": "دوام كامل",
+      "3": "دوام جزئي",
+      "4": "طالب",
+      "5": "لا يعمل"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8596491228070176
+  },
+  {
+    "name": "q5_employment__5",
+    "source": "q5_employment",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "متفرغ",
+      "2": "دوام كامل",
+      "3": "دوام جزئي",
+      "4": "طالب",
+      "5": "لا يعمل"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7894736842105263
+  },
+  {
+    "name": "q5_employment__NA",
+    "source": "q5_employment",
+    "group": "demo_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "متفرغ",
+      "2": "دوام كامل",
+      "3": "دوام جزئي",
+      "4": "طالب",
+      "5": "لا يعمل"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q6_disability__1",
+    "source": "q6_disability",
+    "group": "access_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q6_disability__2",
+    "source": "q6_disability",
+    "group": "access_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q6_disability__NA",
+    "source": "q6_disability",
+    "group": "access_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q7_participation__1",
+    "source": "q7_participation",
+    "group": "access_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q7_participation__2",
+    "source": "q7_participation",
+    "group": "access_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q7_participation__NA",
+    "source": "q7_participation",
+    "group": "access_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q8_overall_satisfaction__1",
+    "source": "q8_overall_satisfaction",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8771929824561403
+  },
+  {
+    "name": "q8_overall_satisfaction__2",
+    "source": "q8_overall_satisfaction",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6491228070175439
+  },
+  {
+    "name": "q8_overall_satisfaction__3",
+    "source": "q8_overall_satisfaction",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q8_overall_satisfaction__4",
+    "source": "q8_overall_satisfaction",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9649122807017544
+  },
+  {
+    "name": "q8_overall_satisfaction__5",
+    "source": "q8_overall_satisfaction",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9649122807017544
+  },
+  {
+    "name": "q8_overall_satisfaction__NA",
+    "source": "q8_overall_satisfaction",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q8_overall_satisfaction__score",
+    "source": "q8_overall_satisfaction",
+    "group": "satisfaction_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 5,
+    "single_value_pct": 0.45614035087719296
+  },
+  {
+    "name": "q9_material_quality__1",
+    "source": "q9_material_quality",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9473684210526315
+  },
+  {
+    "name": "q9_material_quality__2",
+    "source": "q9_material_quality",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q9_material_quality__3",
+    "source": "q9_material_quality",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6666666666666666
+  },
+  {
+    "name": "q9_material_quality__4",
+    "source": "q9_material_quality",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8947368421052632
+  },
+  {
+    "name": "q9_material_quality__5",
+    "source": "q9_material_quality",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9473684210526315
+  },
+  {
+    "name": "q9_material_quality__NA",
+    "source": "q9_material_quality",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q9_material_quality__score",
+    "source": "q9_material_quality",
+    "group": "satisfaction_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 5,
+    "single_value_pct": 0.45614035087719296
+  },
+  {
+    "name": "q10_trainer_competence__1",
+    "source": "q10_trainer_competence",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8771929824561403
+  },
+  {
+    "name": "q10_trainer_competence__2",
+    "source": "q10_trainer_competence",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6491228070175439
+  },
+  {
+    "name": "q10_trainer_competence__3",
+    "source": "q10_trainer_competence",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.631578947368421
+  },
+  {
+    "name": "q10_trainer_competence__4",
+    "source": "q10_trainer_competence",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8947368421052632
+  },
+  {
+    "name": "q10_trainer_competence__5",
+    "source": "q10_trainer_competence",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9473684210526315
+  },
+  {
+    "name": "q10_trainer_competence__NA",
+    "source": "q10_trainer_competence",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q10_trainer_competence__score",
+    "source": "q10_trainer_competence",
+    "group": "satisfaction_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 5,
+    "single_value_pct": 0.3684210526315789
+  },
+  {
+    "name": "q11_training_duration__1",
+    "source": "q11_training_duration",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.8703703703703703
+  },
+  {
+    "name": "q11_training_duration__2",
+    "source": "q11_training_duration",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.7222222222222222
+  },
+  {
+    "name": "q11_training_duration__3",
+    "source": "q11_training_duration",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.5555555555555556
+  },
+  {
+    "name": "q11_training_duration__4",
+    "source": "q11_training_duration",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.8703703703703703
+  },
+  {
+    "name": "q11_training_duration__5",
+    "source": "q11_training_duration",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.9814814814814815
+  },
+  {
+    "name": "q11_training_duration__NA",
+    "source": "q11_training_duration",
+    "group": "satisfaction_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9473684210526315
+  },
+  {
+    "name": "q11_training_duration__score",
+    "source": "q11_training_duration",
+    "group": "satisfaction_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "راضٍ جدًا",
+      "2": "راضٍ",
+      "3": "محايد",
+      "4": "غير راضٍ",
+      "5": "غير راضٍ إطلاقًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 5,
+    "single_value_pct": 0.4444444444444444
+  },
+  {
+    "name": "q12_content_difficulty__1",
+    "source": "q12_content_difficulty",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "سهل جدًا",
+      "2": "سهل",
+      "3": "متوسط",
+      "4": "صعب",
+      "5": "صعب جدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8771929824561403
+  },
+  {
+    "name": "q12_content_difficulty__2",
+    "source": "q12_content_difficulty",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "سهل جدًا",
+      "2": "سهل",
+      "3": "متوسط",
+      "4": "صعب",
+      "5": "صعب جدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8070175438596491
+  },
+  {
+    "name": "q12_content_difficulty__3",
+    "source": "q12_content_difficulty",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "سهل جدًا",
+      "2": "سهل",
+      "3": "متوسط",
+      "4": "صعب",
+      "5": "صعب جدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q12_content_difficulty__4",
+    "source": "q12_content_difficulty",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "سهل جدًا",
+      "2": "سهل",
+      "3": "متوسط",
+      "4": "صعب",
+      "5": "صعب جدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7719298245614035
+  },
+  {
+    "name": "q12_content_difficulty__5",
+    "source": "q12_content_difficulty",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "سهل جدًا",
+      "2": "سهل",
+      "3": "متوسط",
+      "4": "صعب",
+      "5": "صعب جدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q12_content_difficulty__NA",
+    "source": "q12_content_difficulty",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "سهل جدًا",
+      "2": "سهل",
+      "3": "متوسط",
+      "4": "صعب",
+      "5": "صعب جدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q12_content_difficulty__score",
+    "source": "q12_content_difficulty",
+    "group": "quality_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "سهل جدًا",
+      "2": "سهل",
+      "3": "متوسط",
+      "4": "صعب",
+      "5": "صعب جدًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 4,
+    "single_value_pct": 0.45614035087719296
+  },
+  {
+    "name": "q13_safety__1",
+    "source": "q13_safety",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8245614035087719
+  },
+  {
+    "name": "q13_safety__2",
+    "source": "q13_safety",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7017543859649122
+  },
+  {
+    "name": "q13_safety__3",
+    "source": "q13_safety",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.631578947368421
+  },
+  {
+    "name": "q13_safety__4",
+    "source": "q13_safety",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8596491228070176
+  },
+  {
+    "name": "q13_safety__5",
+    "source": "q13_safety",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9824561403508771
+  },
+  {
+    "name": "q13_safety__NA",
+    "source": "q13_safety",
+    "group": "quality_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q13_safety__score",
+    "source": "q13_safety",
+    "group": "quality_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 5,
+    "single_value_pct": 0.3684210526315789
+  },
+  {
+    "name": "q14_consulted__1",
+    "source": "q14_consulted",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6140350877192983
+  },
+  {
+    "name": "q14_consulted__2",
+    "source": "q14_consulted",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6140350877192983
+  },
+  {
+    "name": "q14_consulted__NA",
+    "source": "q14_consulted",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q15_info_complaints__1",
+    "source": "q15_info_complaints",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5614035087719298
+  },
+  {
+    "name": "q15_info_complaints__2",
+    "source": "q15_info_complaints",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5614035087719298
+  },
+  {
+    "name": "q15_info_complaints__NA",
+    "source": "q15_info_complaints",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q16_submitted_complaint__1",
+    "source": "q16_submitted_complaint",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.5740740740740741
+  },
+  {
+    "name": "q16_submitted_complaint__2",
+    "source": "q16_submitted_complaint",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.5740740740740741
+  },
+  {
+    "name": "q16_submitted_complaint__NA",
+    "source": "q16_submitted_complaint",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9473684210526315
+  },
+  {
+    "name": "q17_complaint_handled__1",
+    "source": "q17_complaint_handled",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "جزئيًا",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.543859649122807
+  },
+  {
+    "name": "q17_complaint_handled__2",
+    "source": "q17_complaint_handled",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "جزئيًا",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.631578947368421
+  },
+  {
+    "name": "q17_complaint_handled__3",
+    "source": "q17_complaint_handled",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "جزئيًا",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8245614035087719
+  },
+  {
+    "name": "q17_complaint_handled__NA",
+    "source": "q17_complaint_handled",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "جزئيًا",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q18_skill_improvement__1",
+    "source": "q18_skill_improvement",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "إلى حد كبير",
+      "2": "إلى حد ما",
+      "3": "قليلًا",
+      "4": "لا تأثير",
+      "5": "سلبًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 2,
+    "single_value_pct": 0.8113207547169812
+  },
+  {
+    "name": "q18_skill_improvement__2",
+    "source": "q18_skill_improvement",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "إلى حد كبير",
+      "2": "إلى حد ما",
+      "3": "قليلًا",
+      "4": "لا تأثير",
+      "5": "سلبًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 2,
+    "single_value_pct": 0.6792452830188679
+  },
+  {
+    "name": "q18_skill_improvement__3",
+    "source": "q18_skill_improvement",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "إلى حد كبير",
+      "2": "إلى حد ما",
+      "3": "قليلًا",
+      "4": "لا تأثير",
+      "5": "سلبًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 2,
+    "single_value_pct": 0.6792452830188679
+  },
+  {
+    "name": "q18_skill_improvement__4",
+    "source": "q18_skill_improvement",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "إلى حد كبير",
+      "2": "إلى حد ما",
+      "3": "قليلًا",
+      "4": "لا تأثير",
+      "5": "سلبًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 2,
+    "single_value_pct": 0.8679245283018868
+  },
+  {
+    "name": "q18_skill_improvement__5",
+    "source": "q18_skill_improvement",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "إلى حد كبير",
+      "2": "إلى حد ما",
+      "3": "قليلًا",
+      "4": "لا تأثير",
+      "5": "سلبًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 2,
+    "single_value_pct": 0.9622641509433962
+  },
+  {
+    "name": "q18_skill_improvement__NA",
+    "source": "q18_skill_improvement",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "إلى حد كبير",
+      "2": "إلى حد ما",
+      "3": "قليلًا",
+      "4": "لا تأثير",
+      "5": "سلبًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9298245614035088
+  },
+  {
+    "name": "q18_skill_improvement__score",
+    "source": "q18_skill_improvement",
+    "group": "preference_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "إلى حد كبير",
+      "2": "إلى حد ما",
+      "3": "قليلًا",
+      "4": "لا تأثير",
+      "5": "سلبًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 5,
+    "single_value_pct": 0.32075471698113206
+  },
+  {
+    "name": "q19_use_skills__1",
+    "source": "q19_use_skills",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "ربما",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.5636363636363636
+  },
+  {
+    "name": "q19_use_skills__2",
+    "source": "q19_use_skills",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "ربما",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.509090909090909
+  },
+  {
+    "name": "q19_use_skills__3",
+    "source": "q19_use_skills",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "ربما",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.9454545454545454
+  },
+  {
+    "name": "q19_use_skills__NA",
+    "source": "q19_use_skills",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "نعم",
+      "2": "ربما",
+      "3": "لا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9649122807017544
+  },
+  {
+    "name": "q20_most_useful_aspect__1",
+    "source": "q20_most_useful_aspect",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "المعرفة التقنية",
+      "2": "مهارات العمل",
+      "3": "بناء الثقة",
+      "4": "شبكات تواصل",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.017543859649122806,
+    "unique": 2,
+    "single_value_pct": 0.8035714285714286
+  },
+  {
+    "name": "q20_most_useful_aspect__2",
+    "source": "q20_most_useful_aspect",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "المعرفة التقنية",
+      "2": "مهارات العمل",
+      "3": "بناء الثقة",
+      "4": "شبكات تواصل",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.017543859649122806,
+    "unique": 2,
+    "single_value_pct": 0.5892857142857143
+  },
+  {
+    "name": "q20_most_useful_aspect__3",
+    "source": "q20_most_useful_aspect",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "المعرفة التقنية",
+      "2": "مهارات العمل",
+      "3": "بناء الثقة",
+      "4": "شبكات تواصل",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.017543859649122806,
+    "unique": 2,
+    "single_value_pct": 0.5178571428571429
+  },
+  {
+    "name": "q20_most_useful_aspect__4",
+    "source": "q20_most_useful_aspect",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "المعرفة التقنية",
+      "2": "مهارات العمل",
+      "3": "بناء الثقة",
+      "4": "شبكات تواصل",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.017543859649122806,
+    "unique": 2,
+    "single_value_pct": 0.5714285714285714
+  },
+  {
+    "name": "q20_most_useful_aspect__5",
+    "source": "q20_most_useful_aspect",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "المعرفة التقنية",
+      "2": "مهارات العمل",
+      "3": "بناء الثقة",
+      "4": "شبكات تواصل",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.017543859649122806,
+    "unique": 2,
+    "single_value_pct": 0.8035714285714286
+  },
+  {
+    "name": "q21_biggest_challenge__1",
+    "source": "q21_biggest_challenge",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "اللغة",
+      "2": "الوقت",
+      "3": "الموارد",
+      "4": "المحتوى",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.6666666666666666
+  },
+  {
+    "name": "q21_biggest_challenge__2",
+    "source": "q21_biggest_challenge",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "اللغة",
+      "2": "الوقت",
+      "3": "الموارد",
+      "4": "المحتوى",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5263157894736842
+  },
+  {
+    "name": "q21_biggest_challenge__3",
+    "source": "q21_biggest_challenge",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "اللغة",
+      "2": "الوقت",
+      "3": "الموارد",
+      "4": "المحتوى",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5614035087719298
+  },
+  {
+    "name": "q21_biggest_challenge__4",
+    "source": "q21_biggest_challenge",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "اللغة",
+      "2": "الوقت",
+      "3": "الموارد",
+      "4": "المحتوى",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.631578947368421
+  },
+  {
+    "name": "q21_biggest_challenge__5",
+    "source": "q21_biggest_challenge",
+    "group": "preference_grp",
+    "encoding": "multihot",
+    "labels": {
+      "1": "اللغة",
+      "2": "الوقت",
+      "3": "الموارد",
+      "4": "المحتوى",
+      "5": "أخرى"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8596491228070176
+  },
+  {
+    "name": "q22_gender_inclusion__1",
+    "source": "q22_gender_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.8888888888888888
+  },
+  {
+    "name": "q22_gender_inclusion__2",
+    "source": "q22_gender_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.7037037037037037
+  },
+  {
+    "name": "q22_gender_inclusion__3",
+    "source": "q22_gender_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.5555555555555556
+  },
+  {
+    "name": "q22_gender_inclusion__4",
+    "source": "q22_gender_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.8703703703703703
+  },
+  {
+    "name": "q22_gender_inclusion__5",
+    "source": "q22_gender_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 2,
+    "single_value_pct": 0.9814814814814815
+  },
+  {
+    "name": "q22_gender_inclusion__NA",
+    "source": "q22_gender_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9473684210526315
+  },
+  {
+    "name": "q22_gender_inclusion__score",
+    "source": "q22_gender_inclusion",
+    "group": "preference_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.05263157894736842,
+    "unique": 5,
+    "single_value_pct": 0.4444444444444444
+  },
+  {
+    "name": "q23_disability_inclusion__1",
+    "source": "q23_disability_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8245614035087719
+  },
+  {
+    "name": "q23_disability_inclusion__2",
+    "source": "q23_disability_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7192982456140351
+  },
+  {
+    "name": "q23_disability_inclusion__3",
+    "source": "q23_disability_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5789473684210527
+  },
+  {
+    "name": "q23_disability_inclusion__4",
+    "source": "q23_disability_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.8947368421052632
+  },
+  {
+    "name": "q23_disability_inclusion__5",
+    "source": "q23_disability_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9824561403508771
+  },
+  {
+    "name": "q23_disability_inclusion__NA",
+    "source": "q23_disability_inclusion",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q23_disability_inclusion__score",
+    "source": "q23_disability_inclusion",
+    "group": "preference_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "دائمًا",
+      "2": "غالبًا",
+      "3": "أحيانًا",
+      "4": "نادرًا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 5,
+    "single_value_pct": 0.42105263157894735
+  },
+  {
+    "name": "q24_schedule_fit__1",
+    "source": "q24_schedule_fit",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "مناسب جدًا",
+      "2": "مناسب",
+      "3": "محايد",
+      "4": "غير مناسب",
+      "5": "غير مناسب إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.8181818181818182
+  },
+  {
+    "name": "q24_schedule_fit__2",
+    "source": "q24_schedule_fit",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "مناسب جدًا",
+      "2": "مناسب",
+      "3": "محايد",
+      "4": "غير مناسب",
+      "5": "غير مناسب إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.6545454545454545
+  },
+  {
+    "name": "q24_schedule_fit__3",
+    "source": "q24_schedule_fit",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "مناسب جدًا",
+      "2": "مناسب",
+      "3": "محايد",
+      "4": "غير مناسب",
+      "5": "غير مناسب إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.6909090909090909
+  },
+  {
+    "name": "q24_schedule_fit__4",
+    "source": "q24_schedule_fit",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "مناسب جدًا",
+      "2": "مناسب",
+      "3": "محايد",
+      "4": "غير مناسب",
+      "5": "غير مناسب إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.8545454545454545
+  },
+  {
+    "name": "q24_schedule_fit__5",
+    "source": "q24_schedule_fit",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "مناسب جدًا",
+      "2": "مناسب",
+      "3": "محايد",
+      "4": "غير مناسب",
+      "5": "غير مناسب إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 2,
+    "single_value_pct": 0.9818181818181818
+  },
+  {
+    "name": "q24_schedule_fit__NA",
+    "source": "q24_schedule_fit",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "مناسب جدًا",
+      "2": "مناسب",
+      "3": "محايد",
+      "4": "غير مناسب",
+      "5": "غير مناسب إطلاقًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9649122807017544
+  },
+  {
+    "name": "q24_schedule_fit__score",
+    "source": "q24_schedule_fit",
+    "group": "preference_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "مناسب جدًا",
+      "2": "مناسب",
+      "3": "محايد",
+      "4": "غير مناسب",
+      "5": "غير مناسب إطلاقًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.03508771929824561,
+    "unique": 5,
+    "single_value_pct": 0.34545454545454546
+  },
+  {
+    "name": "q25_recommend__1",
+    "source": "q25_recommend",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "أكيد",
+      "2": "ربما",
+      "3": "غير متأكد",
+      "4": "لا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7719298245614035
+  },
+  {
+    "name": "q25_recommend__2",
+    "source": "q25_recommend",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "أكيد",
+      "2": "ربما",
+      "3": "غير متأكد",
+      "4": "لا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5789473684210527
+  },
+  {
+    "name": "q25_recommend__3",
+    "source": "q25_recommend",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "أكيد",
+      "2": "ربما",
+      "3": "غير متأكد",
+      "4": "لا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.7192982456140351
+  },
+  {
+    "name": "q25_recommend__4",
+    "source": "q25_recommend",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "أكيد",
+      "2": "ربما",
+      "3": "غير متأكد",
+      "4": "لا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.9298245614035088
+  },
+  {
+    "name": "q25_recommend__5",
+    "source": "q25_recommend",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "أكيد",
+      "2": "ربما",
+      "3": "غير متأكد",
+      "4": "لا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q25_recommend__NA",
+    "source": "q25_recommend",
+    "group": "preference_grp",
+    "encoding": "onehot",
+    "labels": {
+      "1": "أكيد",
+      "2": "ربما",
+      "3": "غير متأكد",
+      "4": "لا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 1,
+    "single_value_pct": 1.0
+  },
+  {
+    "name": "q25_recommend__score",
+    "source": "q25_recommend",
+    "group": "preference_grp",
+    "encoding": "score",
+    "labels": {
+      "1": "أكيد",
+      "2": "ربما",
+      "3": "غير متأكد",
+      "4": "لا",
+      "5": "أبدًا"
+    },
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 4,
+    "single_value_pct": 0.42105263157894735
+  },
+  {
+    "name": "kpi__SatisfactionIndex",
+    "source": "scores",
+    "group": "satisfaction_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 13,
+    "single_value_pct": 0.22807017543859648
+  },
+  {
+    "name": "kpi__InclusionIndex",
+    "source": "scores",
+    "group": "inclusion_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 8,
+    "single_value_pct": 0.2982456140350877
+  },
+  {
+    "name": "kpi__SafetyIndex",
+    "source": "scores",
+    "group": "safety_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 5,
+    "single_value_pct": 0.3684210526315789
+  },
+  {
+    "name": "kpi__OutcomeIndex",
+    "source": "scores",
+    "group": "outcome_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 5,
+    "single_value_pct": 0.32075471698113206
+  },
+  {
+    "name": "kpi__CFM_Access",
+    "source": "q15_info_complaints",
+    "group": "access_grp",
+    "encoding": "binary_kpi",
+    "labels": {},
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5614035087719298
+  },
+  {
+    "name": "kpi__CFM_Responsiveness",
+    "source": "q17_complaint_handled|q16_submitted_complaint",
+    "group": "access_grp",
+    "encoding": "binary_conditional",
+    "labels": {},
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.45614035087719296,
+    "unique": 2,
+    "single_value_pct": 0.5161290322580645
+  },
+  {
+    "name": "kpi__SatisfactionIndex",
+    "source": "scores",
+    "group": "satisfaction_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 13,
+    "single_value_pct": 0.22807017543859648
+  },
+  {
+    "name": "kpi__InclusionIndex",
+    "source": "scores",
+    "group": "inclusion_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 8,
+    "single_value_pct": 0.2982456140350877
+  },
+  {
+    "name": "kpi__SafetyIndex",
+    "source": "scores",
+    "group": "safety_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.0,
+    "unique": 5,
+    "single_value_pct": 0.3684210526315789
+  },
+  {
+    "name": "kpi__OutcomeIndex",
+    "source": "scores",
+    "group": "outcome_grp",
+    "encoding": "kpi_mean",
+    "labels": {},
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "missing_pct": 0.07017543859649122,
+    "unique": 5,
+    "single_value_pct": 0.32075471698113206
+  },
+  {
+    "name": "kpi__CFM_Access",
+    "source": "q15_info_complaints",
+    "group": "access_grp",
+    "encoding": "binary_kpi",
+    "labels": {},
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.0,
+    "unique": 2,
+    "single_value_pct": 0.5614035087719298
+  },
+  {
+    "name": "kpi__CFM_Responsiveness",
+    "source": "q17_complaint_handled|q16_submitted_complaint",
+    "group": "access_grp",
+    "encoding": "binary_conditional",
+    "labels": {},
+    "value_range": [
+      0,
+      1
+    ],
+    "missing_pct": 0.45614035087719296,
+    "unique": 2,
+    "single_value_pct": 0.5161290322580645
+  }
+]

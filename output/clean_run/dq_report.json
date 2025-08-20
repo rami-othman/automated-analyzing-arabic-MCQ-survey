@@ -1,0 +1,8 @@
+{
+  "survey_id": "MEAL_Survey_Grouped_answers_XML",
+  "n_rows_in": 57,
+  "invalid_cell_pct": 0.01263157894736842,
+  "row_valid_frac": 1.0,
+  "validity_threshold": 0.95,
+  "dataset_pass": true
+}

@@ -1,0 +1,31 @@
+{
+  "feature_file": "feature_table_v20250811-134503.parquet",
+  "generated_at": "2025-08-15T22:08:34",
+  "params": {
+    "MIN_SUP": 0.12,
+    "K_ANON": 5,
+    "MIN_CONF": 0.55,
+    "MIN_LIFT": 1.1,
+    "MAX_ANTECEDENT": 2,
+    "ALLOW_GROUPS": [
+      "access_grp",
+      "demo_grp",
+      "participation_grp",
+      "preference_grp",
+      "quality_grp"
+    ]
+  },
+  "n_tx": 57,
+  "n_items": 71,
+  "n_itemsets": 2524,
+  "n_rules_preprune": 229,
+  "n_rules_kept": 94,
+  "formats": {
+    "itemsets": "parquet",
+    "rules": "parquet"
+  },
+  "rhs_targets": [
+    "kpi__CFM_Access",
+    "kpi__CFM_Responsiveness"
+  ]
+}

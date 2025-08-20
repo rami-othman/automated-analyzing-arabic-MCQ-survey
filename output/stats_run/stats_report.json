@@ -1,0 +1,274 @@
+{
+  "feature_file": "feature_table_v20250811-134503.parquet",
+  "n_rows": 57,
+  "generated_at": "2025-08-14T12:45:01",
+  "auto_config": {
+    "derived_flags": {
+      "high_satisfaction": {
+        "feature": "kpi__SatisfactionIndex",
+        "op": ">=",
+        "threshold": 0.7
+      },
+      "recommend_yes": {
+        "feature": "q25_recommend__score",
+        "op": ">=",
+        "threshold": 0.7
+      }
+    },
+    "crosstabs": [
+      {
+        "rows": "q1_gender",
+        "cols": "high_satisfaction",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q1_gender",
+        "cols": "recommend_yes",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q1_gender",
+        "cols": "kpi__CFM_Access",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q1_gender",
+        "cols": "kpi__CFM_Responsiveness",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q2_age",
+        "cols": "high_satisfaction",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q2_age",
+        "cols": "recommend_yes",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q2_age",
+        "cols": "kpi__CFM_Access",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q2_age",
+        "cols": "kpi__CFM_Responsiveness",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "high_satisfaction",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "recommend_yes",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "kpi__CFM_Access",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "kpi__CFM_Responsiveness",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q4_education",
+        "cols": "high_satisfaction",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q4_education",
+        "cols": "recommend_yes",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q4_education",
+        "cols": "kpi__CFM_Access",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q4_education",
+        "cols": "kpi__CFM_Responsiveness",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "high_satisfaction",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "recommend_yes",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "kpi__CFM_Access",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "kpi__CFM_Responsiveness",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "high_satisfaction",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "recommend_yes",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "kpi__CFM_Access",
+        "min_cell_n": 2
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "kpi__CFM_Responsiveness",
+        "min_cell_n": 2
+      }
+    ],
+    "trends": {
+      "period": "ME",
+      "metrics": {
+        "kpi__SatisfactionIndex": "mean",
+        "kpi__CFM_Access": "rate",
+        "kpi__CFM_Responsiveness": "rate"
+      }
+    }
+  },
+  "crosstab_summary": {
+    "generated_tabs": [
+      {
+        "rows": "q1_gender",
+        "cols": "high_satisfaction",
+        "total_n": 57
+      },
+      {
+        "rows": "q1_gender",
+        "cols": "recommend_yes",
+        "total_n": 57
+      },
+      {
+        "rows": "q1_gender",
+        "cols": "kpi__CFM_Access",
+        "total_n": 57
+      },
+      {
+        "rows": "q1_gender",
+        "cols": "kpi__CFM_Responsiveness",
+        "total_n": 31
+      },
+      {
+        "rows": "q2_age",
+        "cols": "high_satisfaction",
+        "total_n": 57
+      },
+      {
+        "rows": "q2_age",
+        "cols": "recommend_yes",
+        "total_n": 57
+      },
+      {
+        "rows": "q2_age",
+        "cols": "kpi__CFM_Access",
+        "total_n": 57
+      },
+      {
+        "rows": "q2_age",
+        "cols": "kpi__CFM_Responsiveness",
+        "total_n": 31
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "high_satisfaction",
+        "total_n": 57
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "recommend_yes",
+        "total_n": 57
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "kpi__CFM_Access",
+        "total_n": 57
+      },
+      {
+        "rows": "q3_governorate",
+        "cols": "kpi__CFM_Responsiveness",
+        "total_n": 31
+      },
+      {
+        "rows": "q4_education",
+        "cols": "high_satisfaction",
+        "total_n": 55
+      },
+      {
+        "rows": "q4_education",
+        "cols": "recommend_yes",
+        "total_n": 55
+      },
+      {
+        "rows": "q4_education",
+        "cols": "kpi__CFM_Access",
+        "total_n": 55
+      },
+      {
+        "rows": "q4_education",
+        "cols": "kpi__CFM_Responsiveness",
+        "total_n": 30
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "high_satisfaction",
+        "total_n": 57
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "recommend_yes",
+        "total_n": 57
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "kpi__CFM_Access",
+        "total_n": 57
+      },
+      {
+        "rows": "q5_employment",
+        "cols": "kpi__CFM_Responsiveness",
+        "total_n": 31
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "high_satisfaction",
+        "total_n": 57
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "recommend_yes",
+        "total_n": 57
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "kpi__CFM_Access",
+        "total_n": 57
+      },
+      {
+        "rows": "q6_disability",
+        "cols": "kpi__CFM_Responsiveness",
+        "total_n": 31
+      }
+    ],
+    "dropped_tabs": []
+  }
+}

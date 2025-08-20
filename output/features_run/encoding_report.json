@@ -1,0 +1,122 @@
+{
+  "dropped": [
+    "q10_trainer_competence__NA",
+    "q11_training_duration__5",
+    "q12_content_difficulty__5",
+    "q12_content_difficulty__NA",
+    "q13_safety__5",
+    "q13_safety__NA",
+    "q14_consulted__NA",
+    "q15_info_complaints__NA",
+    "q17_complaint_handled__NA",
+    "q18_skill_improvement__5",
+    "q19_use_skills__NA",
+    "q1_gender__NA",
+    "q22_gender_inclusion__5",
+    "q23_disability_inclusion__5",
+    "q23_disability_inclusion__NA",
+    "q24_schedule_fit__5",
+    "q24_schedule_fit__NA",
+    "q25_recommend__5",
+    "q25_recommend__NA",
+    "q2_age__NA",
+    "q3_governorate__NA",
+    "q4_education__1",
+    "q4_education__NA",
+    "q5_employment__NA",
+    "q6_disability__NA",
+    "q7_participation__NA",
+    "q8_overall_satisfaction__4",
+    "q8_overall_satisfaction__5",
+    "q8_overall_satisfaction__NA",
+    "q9_material_quality__NA"
+  ],
+  "warnings": [],
+  "polarity": {
+    "q8_overall_satisfaction": {
+      "high_is_bad": false,
+      "source": "labels(+/-)"
+    },
+    "q9_material_quality": {
+      "high_is_bad": false,
+      "source": "labels(+/-)"
+    },
+    "q10_trainer_competence": {
+      "high_is_bad": false,
+      "source": "labels(+/-)"
+    },
+    "q11_training_duration": {
+      "high_is_bad": false,
+      "source": "labels(+/-)"
+    },
+    "q12_content_difficulty": {
+      "high_is_bad": false,
+      "source": "default"
+    },
+    "q13_safety": {
+      "high_is_bad": false,
+      "source": "default"
+    },
+    "q18_skill_improvement": {
+      "high_is_bad": false,
+      "source": "default"
+    },
+    "q22_gender_inclusion": {
+      "high_is_bad": false,
+      "source": "default"
+    },
+    "q23_disability_inclusion": {
+      "high_is_bad": false,
+      "source": "default"
+    },
+    "q24_schedule_fit": {
+      "high_is_bad": false,
+      "source": "labels(+/-)"
+    },
+    "q25_recommend": {
+      "high_is_bad": false,
+      "source": "default"
+    }
+  },
+  "kpis": {
+    "kpi__SatisfactionIndex": {
+      "parts": [
+        "q10_trainer_competence__score",
+        "q11_training_duration__score",
+        "q8_overall_satisfaction__score",
+        "q9_material_quality__score"
+      ]
+    },
+    "kpi__InclusionIndex": {
+      "parts": [
+        "q22_gender_inclusion__score",
+        "q23_disability_inclusion__score"
+      ]
+    },
+    "kpi__SafetyIndex": {
+      "parts": [
+        "q13_safety__score"
+      ]
+    },
+    "kpi__OutcomeIndex": {
+      "parts": [
+        "q18_skill_improvement__score"
+      ]
+    },
+    "kpi__CFM_Access": {
+      "source": "q15_info_complaints"
+    },
+    "kpi__CFM_Responsiveness": {
+      "numerator": "q17_complaint_handled",
+      "denominator": "q16_submitted_complaint",
+      "applicable_rows": 31
+    }
+  },
+  "suppressed_scores": [
+    {
+      "question": "q5_employment",
+      "group": "demo_grp",
+      "reason": "demo_grp"
+    }
+  ]
+}

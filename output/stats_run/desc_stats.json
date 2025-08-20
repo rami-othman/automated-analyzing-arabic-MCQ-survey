@@ -1,0 +1,662 @@
+[
+  {
+    "feature": "q1_gender",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 30,
+        "pct": 0.5263157894736842
+      },
+      {
+        "value": "2",
+        "count": 27,
+        "pct": 0.47368421052631576
+      }
+    ]
+  },
+  {
+    "feature": "q2_age",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 5,
+        "pct": 0.08771929824561403
+      },
+      {
+        "value": "2",
+        "count": 13,
+        "pct": 0.22807017543859648
+      },
+      {
+        "value": "3",
+        "count": 19,
+        "pct": 0.3333333333333333
+      },
+      {
+        "value": "4",
+        "count": 12,
+        "pct": 0.21052631578947367
+      },
+      {
+        "value": "5",
+        "count": 5,
+        "pct": 0.08771929824561403
+      },
+      {
+        "value": "6",
+        "count": 3,
+        "pct": 0.05263157894736842
+      }
+    ]
+  },
+  {
+    "feature": "q3_governorate",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 12,
+        "pct": 0.21052631578947367
+      },
+      {
+        "value": "2",
+        "count": 8,
+        "pct": 0.14035087719298245
+      },
+      {
+        "value": "3",
+        "count": 15,
+        "pct": 0.2631578947368421
+      },
+      {
+        "value": "4",
+        "count": 9,
+        "pct": 0.15789473684210525
+      },
+      {
+        "value": "5",
+        "count": 9,
+        "pct": 0.15789473684210525
+      },
+      {
+        "value": "6",
+        "count": 4,
+        "pct": 0.07017543859649122
+      }
+    ]
+  },
+  {
+    "feature": "q5_employment",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 5,
+        "pct": 0.08771929824561403
+      },
+      {
+        "value": "2",
+        "count": 15,
+        "pct": 0.2631578947368421
+      },
+      {
+        "value": "3",
+        "count": 17,
+        "pct": 0.2982456140350877
+      },
+      {
+        "value": "4",
+        "count": 8,
+        "pct": 0.14035087719298245
+      },
+      {
+        "value": "5",
+        "count": 12,
+        "pct": 0.21052631578947367
+      }
+    ]
+  },
+  {
+    "feature": "q6_disability",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 26,
+        "pct": 0.45614035087719296
+      },
+      {
+        "value": "2",
+        "count": 31,
+        "pct": 0.543859649122807
+      }
+    ]
+  },
+  {
+    "feature": "q7_participation",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 31,
+        "pct": 0.543859649122807
+      },
+      {
+        "value": "2",
+        "count": 26,
+        "pct": 0.45614035087719296
+      }
+    ]
+  },
+  {
+    "feature": "q9_material_quality",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 3,
+        "pct": 0.05263157894736842
+      },
+      {
+        "value": "2",
+        "count": 26,
+        "pct": 0.45614035087719296
+      },
+      {
+        "value": "3",
+        "count": 19,
+        "pct": 0.3333333333333333
+      },
+      {
+        "value": "4",
+        "count": 6,
+        "pct": 0.10526315789473684
+      },
+      {
+        "value": "5",
+        "count": 3,
+        "pct": 0.05263157894736842
+      }
+    ]
+  },
+  {
+    "feature": "q10_trainer_competence",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 7,
+        "pct": 0.12280701754385964
+      },
+      {
+        "value": "2",
+        "count": 20,
+        "pct": 0.3508771929824561
+      },
+      {
+        "value": "3",
+        "count": 21,
+        "pct": 0.3684210526315789
+      },
+      {
+        "value": "4",
+        "count": 6,
+        "pct": 0.10526315789473684
+      },
+      {
+        "value": "5",
+        "count": 3,
+        "pct": 0.05263157894736842
+      }
+    ]
+  },
+  {
+    "feature": "q14_consulted",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 35,
+        "pct": 0.6140350877192983
+      },
+      {
+        "value": "2",
+        "count": 22,
+        "pct": 0.38596491228070173
+      }
+    ]
+  },
+  {
+    "feature": "q15_info_complaints",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 32,
+        "pct": 0.5614035087719298
+      },
+      {
+        "value": "2",
+        "count": 25,
+        "pct": 0.43859649122807015
+      }
+    ]
+  },
+  {
+    "feature": "q16_submitted_complaint",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 54,
+    "missing_n": 3,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 31,
+        "pct": 0.5740740740740741
+      },
+      {
+        "value": "2",
+        "count": 23,
+        "pct": 0.42592592592592593
+      }
+    ]
+  },
+  {
+    "feature": "q17_complaint_handled",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 26,
+        "pct": 0.45614035087719296
+      },
+      {
+        "value": "2",
+        "count": 21,
+        "pct": 0.3684210526315789
+      },
+      {
+        "value": "3",
+        "count": 10,
+        "pct": 0.17543859649122806
+      }
+    ]
+  },
+  {
+    "feature": "q19_use_skills",
+    "type": "categorical",
+    "n": 57,
+    "valid_n": 55,
+    "missing_n": 2,
+    "distribution": [
+      {
+        "value": "1",
+        "count": 24,
+        "pct": 0.43636363636363634
+      },
+      {
+        "value": "2",
+        "count": 28,
+        "pct": 0.509090909090909
+      },
+      {
+        "value": "3",
+        "count": 3,
+        "pct": 0.05454545454545454
+      }
+    ]
+  },
+  {
+    "feature": "q20_most_useful_aspect__1",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 56,
+    "missing_n": 1,
+    "rate": 0.19642857142857142
+  },
+  {
+    "feature": "q20_most_useful_aspect__2",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 56,
+    "missing_n": 1,
+    "rate": 0.4107142857142857
+  },
+  {
+    "feature": "q20_most_useful_aspect__3",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 56,
+    "missing_n": 1,
+    "rate": 0.48214285714285715
+  },
+  {
+    "feature": "q20_most_useful_aspect__4",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 56,
+    "missing_n": 1,
+    "rate": 0.42857142857142855
+  },
+  {
+    "feature": "q20_most_useful_aspect__5",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 56,
+    "missing_n": 1,
+    "rate": 0.19642857142857142
+  },
+  {
+    "feature": "q21_biggest_challenge__1",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "rate": 0.3333333333333333
+  },
+  {
+    "feature": "q21_biggest_challenge__2",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "rate": 0.5263157894736842
+  },
+  {
+    "feature": "q21_biggest_challenge__3",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "rate": 0.5614035087719298
+  },
+  {
+    "feature": "q21_biggest_challenge__4",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "rate": 0.3684210526315789
+  },
+  {
+    "feature": "q21_biggest_challenge__5",
+    "type": "binary",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "rate": 0.14035087719298245
+  },
+  {
+    "feature": "kpi__CFM_Access",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.5614035087719298,
+    "std": 0.5006261743217589,
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0
+  },
+  {
+    "feature": "kpi__CFM_Responsiveness",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 31,
+    "missing_n": 26,
+    "mean": 0.5161290322580645,
+    "std": 0.508000508000762,
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0
+  },
+  {
+    "feature": "kpi__InclusionIndex",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.38596490025520325,
+    "std": 0.20496174693107605,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.375,
+    "p75": 0.5,
+    "max": 0.875
+  },
+  {
+    "feature": "kpi__OutcomeIndex",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 53,
+    "missing_n": 4,
+    "mean": 0.37735849618911743,
+    "std": 0.26684877276420593,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.25,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "kpi__SafetyIndex",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.3815789520740509,
+    "std": 0.25046947598457336,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "kpi__SatisfactionIndex",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.39948832988739014,
+    "std": 0.14930616319179535,
+    "min": 0.125,
+    "p25": 0.3125,
+    "median": 0.4166666567325592,
+    "p75": 0.5,
+    "max": 0.875
+  },
+  {
+    "feature": "q10_trainer_competence__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.4035087823867798,
+    "std": 0.25334540009498596,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q11_training_duration__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 54,
+    "missing_n": 3,
+    "mean": 0.40740740299224854,
+    "std": 0.23440158367156982,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q12_content_difficulty__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.44736841320991516,
+    "std": 0.2349812090396881,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 0.75
+  },
+  {
+    "feature": "q13_safety__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.3815789520740509,
+    "std": 0.25046947598457336,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q18_skill_improvement__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 53,
+    "missing_n": 4,
+    "mean": 0.37735849618911743,
+    "std": 0.26684877276420593,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.25,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q22_gender_inclusion__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 54,
+    "missing_n": 3,
+    "mean": 0.41203704476356506,
+    "std": 0.2286001741886139,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q23_disability_inclusion__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.37719297409057617,
+    "std": 0.24147431552410126,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q24_schedule_fit__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 55,
+    "missing_n": 2,
+    "mean": 0.36818182468414307,
+    "std": 0.2539254128932953,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.25,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q25_recommend__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.2982456088066101,
+    "std": 0.2187555879354477,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.25,
+    "p75": 0.5,
+    "max": 0.75
+  },
+  {
+    "feature": "q8_overall_satisfaction__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.37719297409057617,
+    "std": 0.22221896052360535,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.5,
+    "p75": 0.5,
+    "max": 1.0
+  },
+  {
+    "feature": "q9_material_quality__score",
+    "type": "numeric",
+    "n": 57,
+    "valid_n": 57,
+    "missing_n": 0,
+    "mean": 0.41228070855140686,
+    "std": 0.23381172120571136,
+    "min": 0.0,
+    "p25": 0.25,
+    "median": 0.25,
+    "p75": 0.5,
+    "max": 1.0
+  }
+]

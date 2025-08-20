@@ -1,0 +1,15 @@
+{
+  "feature_file": "feature_table_v20250811-134503.parquet",
+  "generated_at": "2025-08-14T22:04:47",
+  "n_candidates": 29,
+  "pair_mode": "targets_vs_all",
+  "params": {
+    "MAX_LEVELS": 12,
+    "MIN_VALID_N": 20,
+    "FDR_Q": 0.25,
+    "P_THRESH": 0.05,
+    "MAX_PAIRS_TEST": 50000
+  },
+  "tested_pairs": 81,
+  "significant_pairs": 1
+}

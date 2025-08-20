@@ -1,0 +1,63 @@
+{
+  "feature_file": "feature_table_v20250811-134503.parquet",
+  "generated_at": "2025-08-16T21:38:17",
+  "params": {
+    "GROUPS_FOR_CLUSTER": [
+      "access_grp",
+      "demo_grp",
+      "participation_grp",
+      "preference_grp",
+      "quality_grp"
+    ],
+    "MIN_PREVALENCE": 0.07,
+    "MAX_PREVALENCE": 0.9,
+    "TOP_MULTI_PER_LIST": 10,
+    "MAX_TOTAL_FEATURES": 35,
+    "K_RANGE": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "N_INIT": 5,
+    "ELBOW_DELTA": 0.1,
+    "MIN_CLUSTER_SIZE_FR": 0.1,
+    "LOW_SIL_FALLBACK": 0.02
+  },
+  "dims": {
+    "parents": 23,
+    "binary": 10,
+    "total": 33
+  },
+  "k_grid": [
+    {
+      "k": 2,
+      "cost": 873.0,
+      "silhouette": 0.0776216068449298,
+      "rel_drop": 0.0
+    },
+    {
+      "k": 3,
+      "cost": 787.0,
+      "silhouette": 0.08199425308217725,
+      "rel_drop": 0.09851088201603665
+    },
+    {
+      "k": 4,
+      "cost": 734.0,
+      "silhouette": 0.08448362573365707,
+      "rel_drop": 0.06734434561626429
+    }
+  ],
+  "chosen_k": 4,
+  "assignments_file": "clusters_assignments.parquet",
+  "cluster_sizes": {
+    "0": 18,
+    "1": 7,
+    "2": 19,
+    "3": 13
+  },
+  "silhouette_max": 0.08448362573365707,
+  "low_signal_fallback": false
+}
