@@ -1,6 +1,6 @@
 {
-  "feature_file": "feature_table_v20250811-134503.parquet",
-  "generated_at": "2025-08-16T21:38:17",
+  "feature_file": "feature_table_v20250826-134734.parquet",
+  "generated_at": "2025-08-26T13:47:42",
   "params": {
     "GROUPS_FOR_CLUSTER": [
       "access_grp",

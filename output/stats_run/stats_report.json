@@ -1,7 +1,7 @@
 {
-  "feature_file": "feature_table_v20250811-134503.parquet",
+  "feature_file": "feature_table_v20250826-134734.parquet",
   "n_rows": 57,
-  "generated_at": "2025-08-14T12:45:01",
+  "generated_at": "2025-08-26T13:47:36",
   "auto_config": {
     "derived_flags": {
       "high_satisfaction": {
