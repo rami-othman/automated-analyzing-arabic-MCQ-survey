@@ -1,6 +1,6 @@
 {
-  "feature_file": "feature_table_v20250826-134734.parquet",
-  "generated_at": "2025-08-26T13:47:38",
+  "feature_file": "feature_table_v20251019-230636.parquet",
+  "generated_at": "2025-10-19T23:06:42",
   "n_candidates": 29,
   "pair_mode": "targets_vs_all",
   "params": {

@@ -1,0 +1,648 @@
+{
+  "meta": {
+    "survey_id": "v20251019-230636",
+    "version": "2025-10-19",
+    "created_at": "2025-10-19T23:06:45",
+    "n": 57,
+    "lang": "ar",
+    "dq": {
+      "notes": []
+    }
+  },
+  "glossary": {
+    "questions": {
+      "q1_gender": "ما هو جنسك؟",
+      "q2_age": "إلى أي فئة عمرية تنتمي؟",
+      "q3_governorate": "في أي محافظة تقيم؟",
+      "q4_education": "ما هو أعلى مستوى تعليمي حصلت عليه؟",
+      "q5_employment": "ما هي حالتك الوظيفية حاليًا؟",
+      "q6_disability": "هل لديك أي إعاقة؟",
+      "q7_participation": "هل شاركت في نشاط البرنامج؟",
+      "q8_overall_satisfaction": "ما مدى رضاك العام عن النشاط؟",
+      "q9_material_quality": "كيف تقيم جودة المادة التدريبية؟",
+      "q10_trainer_competence": "كيف تقيم كفاءة المدربين؟",
+      "q11_training_duration": "كيف تقيم مدة التدريب؟",
+      "q12_content_difficulty": "كيف تصف صعوبة المحتوى؟",
+      "q13_safety": "هل شعرت بالأمان في مكان التدريب؟",
+      "q14_consulted": "هل تم أخذ رأيك في تصميم النشاط؟",
+      "q15_info_complaints": "هل تلقيت معلومات واضحة عن آلية الشكاوى؟",
+      "q16_submitted_complaint": "هل سبق أن قدمت شكوى؟",
+      "q17_complaint_handled": "إذا قدمت شكوى، هل تمت معالجتها؟",
+      "q18_skill_improvement": "إلى أي مدى ساهم التدريب في تحسين مهاراتك؟",
+      "q19_use_skills": "هل تنوي استخدام المهارات خلال ثلاثة أشهر؟",
+      "q20_most_useful_aspect": "ما هو الجانب الأكثر فائدة بالنسبة لك؟ (اختر واحدة أو أكثر)",
+      "q21_biggest_challenge": "ما هو التحدي الأكبر الذي واجهته؟ (اختر واحدة أو أكثر)",
+      "q22_gender_inclusion": "هل تعتقد أن البرنامج يراعي احتياجات الإناث؟",
+      "q23_disability_inclusion": "هل تعتقد أن البرنامج يراعي احتياجات ذوي الإعاقة؟",
+      "q24_schedule_fit": "ما درجة توافق توقيت النشاط مع التزاماتك؟",
+      "q25_recommend": "هل توصي الآخرين بالمشاركة في هذا البرنامج؟",
+      "scores": "scores",
+      "q17_complaint_handled|q16_submitted_complaint": "q17_complaint_handled|q16_submitted_complaint",
+      "demo_grp": "البيانات الديموغرافية",
+      "access_grp": "إتاحة الوصول والمشاركة",
+      "satisfaction_grp": "الرضا",
+      "quality_grp": "الجودة",
+      "preference_grp": "التفضيلات والتعليقات"
+    },
+    "items": {
+      "q1_gender__1": "q1_gender = ذكر",
+      "q1_gender__2": "q1_gender = أنثى",
+      "q2_age__1": "q2_age = 15-17",
+      "q2_age__2": "q2_age = 18-24",
+      "q2_age__3": "q2_age = 25-34",
+      "q2_age__4": "q2_age = 35-44",
+      "q2_age__5": "q2_age = 45-54",
+      "q2_age__6": "q2_age = 55+",
+      "q3_governorate__1": "q3_governorate = القاهرة",
+      "q3_governorate__2": "q3_governorate = الإسكندرية",
+      "q3_governorate__3": "q3_governorate = أسوان",
+      "q3_governorate__4": "q3_governorate = الأقصر",
+      "q3_governorate__5": "q3_governorate = الجيزة",
+      "q3_governorate__6": "q3_governorate = سوهاج",
+      "q4_education__1": "q4_education = بدون تعليم",
+      "q4_education__2": "q4_education = ابتدائي",
+      "q4_education__3": "q4_education = إعدادي",
+      "q4_education__4": "q4_education = ثانوي",
+      "q4_education__5": "q4_education = جامعي",
+      "q4_education__6": "q4_education = دراسات عليا",
+      "q5_employment__1": "q5_employment = متفرغ",
+      "q5_employment__2": "q5_employment = دوام كامل",
+      "q5_employment__3": "q5_employment = دوام جزئي",
+      "q5_employment__4": "q5_employment = طالب",
+      "q5_employment__5": "q5_employment = لا يعمل",
+      "q6_disability__1": "q6_disability = نعم",
+      "q6_disability__2": "q6_disability = لا",
+      "q7_participation__1": "q7_participation = نعم",
+      "q7_participation__2": "q7_participation = لا",
+      "q8_overall_satisfaction__1": "q8_overall_satisfaction = راضٍ جدًا",
+      "q8_overall_satisfaction__2": "q8_overall_satisfaction = راضٍ",
+      "q8_overall_satisfaction__3": "q8_overall_satisfaction = محايد",
+      "q8_overall_satisfaction__4": "q8_overall_satisfaction = غير راضٍ",
+      "q8_overall_satisfaction__5": "q8_overall_satisfaction = غير راضٍ إطلاقًا",
+      "q9_material_quality__1": "q9_material_quality = راضٍ جدًا",
+      "q9_material_quality__2": "q9_material_quality = راضٍ",
+      "q9_material_quality__3": "q9_material_quality = محايد",
+      "q9_material_quality__4": "q9_material_quality = غير راضٍ",
+      "q9_material_quality__5": "q9_material_quality = غير راضٍ إطلاقًا",
+      "q10_trainer_competence__1": "q10_trainer_competence = راضٍ جدًا",
+      "q10_trainer_competence__2": "q10_trainer_competence = راضٍ",
+      "q10_trainer_competence__3": "q10_trainer_competence = محايد",
+      "q10_trainer_competence__4": "q10_trainer_competence = غير راضٍ",
+      "q10_trainer_competence__5": "q10_trainer_competence = غير راضٍ إطلاقًا",
+      "q11_training_duration__1": "q11_training_duration = راضٍ جدًا",
+      "q11_training_duration__2": "q11_training_duration = راضٍ",
+      "q11_training_duration__3": "q11_training_duration = محايد",
+      "q11_training_duration__4": "q11_training_duration = غير راضٍ",
+      "q11_training_duration__5": "q11_training_duration = غير راضٍ إطلاقًا",
+      "q12_content_difficulty__1": "q12_content_difficulty = سهل جدًا",
+      "q12_content_difficulty__2": "q12_content_difficulty = سهل",
+      "q12_content_difficulty__3": "q12_content_difficulty = متوسط",
+      "q12_content_difficulty__4": "q12_content_difficulty = صعب",
+      "q12_content_difficulty__5": "q12_content_difficulty = صعب جدًا",
+      "q13_safety__1": "q13_safety = دائمًا",
+      "q13_safety__2": "q13_safety = غالبًا",
+      "q13_safety__3": "q13_safety = أحيانًا",
+      "q13_safety__4": "q13_safety = نادرًا",
+      "q13_safety__5": "q13_safety = أبدًا",
+      "q14_consulted__1": "q14_consulted = نعم",
+      "q14_consulted__2": "q14_consulted = لا",
+      "q15_info_complaints__1": "q15_info_complaints = نعم",
+      "q15_info_complaints__2": "q15_info_complaints = لا",
+      "q16_submitted_complaint__1": "q16_submitted_complaint = نعم",
+      "q16_submitted_complaint__2": "q16_submitted_complaint = لا",
+      "q17_complaint_handled__1": "q17_complaint_handled = نعم",
+      "q17_complaint_handled__2": "q17_complaint_handled = جزئيًا",
+      "q17_complaint_handled__3": "q17_complaint_handled = لا",
+      "q18_skill_improvement__1": "q18_skill_improvement = إلى حد كبير",
+      "q18_skill_improvement__2": "q18_skill_improvement = إلى حد ما",
+      "q18_skill_improvement__3": "q18_skill_improvement = قليلًا",
+      "q18_skill_improvement__4": "q18_skill_improvement = لا تأثير",
+      "q18_skill_improvement__5": "q18_skill_improvement = سلبًا",
+      "q19_use_skills__1": "q19_use_skills = نعم",
+      "q19_use_skills__2": "q19_use_skills = ربما",
+      "q19_use_skills__3": "q19_use_skills = لا",
+      "q20_most_useful_aspect__1": "q20_most_useful_aspect = المعرفة التقنية",
+      "q20_most_useful_aspect__2": "q20_most_useful_aspect = مهارات العمل",
+      "q20_most_useful_aspect__3": "q20_most_useful_aspect = بناء الثقة",
+      "q20_most_useful_aspect__4": "q20_most_useful_aspect = شبكات تواصل",
+      "q20_most_useful_aspect__5": "q20_most_useful_aspect = أخرى",
+      "q21_biggest_challenge__1": "q21_biggest_challenge = اللغة",
+      "q21_biggest_challenge__2": "q21_biggest_challenge = الوقت",
+      "q21_biggest_challenge__3": "q21_biggest_challenge = الموارد",
+      "q21_biggest_challenge__4": "q21_biggest_challenge = المحتوى",
+      "q21_biggest_challenge__5": "q21_biggest_challenge = أخرى",
+      "q22_gender_inclusion__1": "q22_gender_inclusion = دائمًا",
+      "q22_gender_inclusion__2": "q22_gender_inclusion = غالبًا",
+      "q22_gender_inclusion__3": "q22_gender_inclusion = أحيانًا",
+      "q22_gender_inclusion__4": "q22_gender_inclusion = نادرًا",
+      "q22_gender_inclusion__5": "q22_gender_inclusion = أبدًا",
+      "q23_disability_inclusion__1": "q23_disability_inclusion = دائمًا",
+      "q23_disability_inclusion__2": "q23_disability_inclusion = غالبًا",
+      "q23_disability_inclusion__3": "q23_disability_inclusion = أحيانًا",
+      "q23_disability_inclusion__4": "q23_disability_inclusion = نادرًا",
+      "q23_disability_inclusion__5": "q23_disability_inclusion = أبدًا",
+      "q24_schedule_fit__1": "q24_schedule_fit = مناسب جدًا",
+      "q24_schedule_fit__2": "q24_schedule_fit = مناسب",
+      "q24_schedule_fit__3": "q24_schedule_fit = محايد",
+      "q24_schedule_fit__4": "q24_schedule_fit = غير مناسب",
+      "q24_schedule_fit__5": "q24_schedule_fit = غير مناسب إطلاقًا",
+      "q25_recommend__1": "q25_recommend = أكيد",
+      "q25_recommend__2": "q25_recommend = ربما",
+      "q25_recommend__3": "q25_recommend = غير متأكد",
+      "q25_recommend__4": "q25_recommend = لا",
+      "q25_recommend__5": "q25_recommend = أبدًا"
+    }
+  },
+  "kpi_overview": [
+    {
+      "name": "SatisfactionIndex",
+      "mean": 0.39948832988739014,
+      "ci": [
+        0.27233392258721306,
+        0.5266427371875673
+      ],
+      "n": 57
+    },
+    {
+      "name": "InclusionIndex",
+      "mean": 0.38596490025520325,
+      "ci": [
+        0.25958175831266744,
+        0.5123480421977391
+      ],
+      "n": 57
+    },
+    {
+      "name": "SafetyIndex",
+      "mean": 0.3815789520740509,
+      "ci": [
+        0.25546794895796887,
+        0.5076899551901329
+      ],
+      "n": 57
+    },
+    {
+      "name": "OutcomeIndex",
+      "mean": 0.37735849618911743,
+      "ci": [
+        0.2468573770712666,
+        0.5078596153069683
+      ],
+      "n": 53
+    },
+    {
+      "name": "CFM_Access",
+      "rate": 0.5614035087719298,
+      "n": 57
+    },
+    {
+      "name": "CFM_Responsiveness",
+      "rate": 0.5161290322580645,
+      "n": 31
+    }
+  ],
+  "highlights": [
+    {
+      "type": "kpi_gap",
+      "title": null,
+      "metrics": {
+        "row_question": "q6_disability",
+        "row_question_label": "هل لديك أي إعاقة؟",
+        "row_level": "2",
+        "row_level_label": "q6_disability = لا",
+        "metric": "recommend_yes",
+        "rate": 0.543859649122807,
+        "gap_vs_overall": 0.30788732014509756,
+        "n_row": 57,
+        "n_cell": 31
+      },
+      "evidence": [
+        {
+          "stage": "A4",
+          "source": "crosstabs.parquet"
+        }
+      ],
+      "score": 1.0
+    },
+    {
+      "type": "kpi_gap",
+      "title": null,
+      "metrics": {
+        "row_question": "q6_disability",
+        "row_question_label": "هل لديك أي إعاقة؟",
+        "row_level": "2",
+        "row_level_label": "q6_disability = لا",
+        "metric": "high_satisfaction",
+        "rate": 0.543859649122807,
+        "gap_vs_overall": 0.30306436193576725,
+        "n_row": 57,
+        "n_cell": 31
+      },
+      "evidence": [
+        {
+          "stage": "A4",
+          "source": "crosstabs.parquet"
+        }
+      ],
+      "score": 1.0
+    },
+    {
+      "type": "kpi_gap",
+      "title": null,
+      "metrics": {
+        "row_question": "q1_gender",
+        "row_question_label": "ما هو جنسك؟",
+        "row_level": "1",
+        "row_level_label": "q1_gender = ذكر",
+        "metric": "high_satisfaction",
+        "rate": 0.5263157894736842,
+        "gap_vs_overall": 0.2855205022866444,
+        "n_row": 57,
+        "n_cell": 30
+      },
+      "evidence": [
+        {
+          "stage": "A4",
+          "source": "crosstabs.parquet"
+        }
+      ],
+      "score": 1.0
+    }
+  ],
+  "associations": [
+    {
+      "var_x": "q15_info_complaints",
+      "var_y": "kpi__CFM_Access",
+      "effect": {
+        "cramers_v": 0.9637150830840182,
+        "p_adj": 2.686529345918756e-11,
+        "n": 57
+      },
+      "drivers": [],
+      "score": 0.971
+    }
+  ],
+  "patterns": [],
+  "segments": [
+    {
+      "cluster": 0,
+      "size": 18,
+      "share": 0.3157894736842105,
+      "title": "q12_content_difficulty=سهل جدًا | q1_gender = أنثى",
+      "kpis": {
+        "SatisfactionIndex": {
+          "mean": 0.34490740299224854,
+          "n": 18
+        },
+        "InclusionIndex": {
+          "mean": 0.2916666567325592,
+          "n": 18
+        },
+        "SafetyIndex": {
+          "mean": 0.3055555522441864,
+          "n": 18
+        },
+        "OutcomeIndex": {
+          "mean": 0.21875,
+          "n": 16
+        },
+        "CFM_Access": {
+          "rate": 0.7222222222222222,
+          "n": 18
+        },
+        "CFM_Responsiveness": {
+          "rate": 0.6363636363636364,
+          "n": 11
+        }
+      },
+      "parent_modes": [
+        {
+          "parent": "q12_content_difficulty",
+          "mode": "سهل جدًا",
+          "lift": 2.7142857142857144
+        },
+        {
+          "parent": "q25_recommend",
+          "mode": "أكيد",
+          "lift": 2.435897435897436
+        },
+        {
+          "parent": "q18_skill_improvement",
+          "mode": "إلى حد كبير",
+          "lift": 2.216666666666667
+        },
+        {
+          "parent": "q23_disability_inclusion",
+          "mode": "دائمًا",
+          "lift": 2.216666666666667
+        },
+        {
+          "parent": "q3_governorate",
+          "mode": "الأقصر",
+          "lift": 1.7592592592592595
+        }
+      ],
+      "top_items": [
+        {
+          "label": "q1_gender = أنثى",
+          "lift": 1.5246913580246915
+        },
+        {
+          "label": "q14_consulted = نعم",
+          "lift": 1.3571428571428572
+        },
+        {
+          "label": "q7_participation = نعم",
+          "lift": 1.3279569892473118
+        },
+        {
+          "label": "q15_info_complaints = نعم",
+          "lift": 1.2864583333333335
+        },
+        {
+          "label": "q6_disability = لا",
+          "lift": 1.225806451612903
+        }
+      ],
+      "score": 0.688
+    },
+    {
+      "cluster": 1,
+      "size": 7,
+      "share": 0.12280701754385964,
+      "title": "q11_training_duration=غير راضٍ | q1_gender = ذكر",
+      "kpis": {
+        "SatisfactionIndex": {
+          "mean": 0.375,
+          "n": 7
+        },
+        "InclusionIndex": {
+          "mean": 0.4464285671710968,
+          "n": 7
+        },
+        "SafetyIndex": {
+          "mean": 0.4285714328289032,
+          "n": 7
+        },
+        "OutcomeIndex": {
+          "mean": 0.3928571343421936,
+          "n": 7
+        },
+        "CFM_Access": {
+          "rate": 0.14285714285714285,
+          "n": 7
+        }
+      },
+      "parent_modes": [
+        {
+          "parent": "q11_training_duration",
+          "mode": "غير راضٍ",
+          "lift": 3.489795918367347
+        },
+        {
+          "parent": "q3_governorate",
+          "mode": "الجيزة",
+          "lift": 2.7142857142857144
+        },
+        {
+          "parent": "q14_consulted",
+          "mode": "لا",
+          "lift": 2.220779220779221
+        },
+        {
+          "parent": "q24_schedule_fit",
+          "mode": "مناسب",
+          "lift": 2.1428571428571432
+        },
+        {
+          "parent": "q13_safety",
+          "mode": "نادرًا",
+          "lift": 2.0357142857142856
+        }
+      ],
+      "top_items": [
+        {
+          "label": "q1_gender = ذكر",
+          "lift": 1.9000000000000001
+        },
+        {
+          "label": "q21_biggest_challenge = الموارد",
+          "lift": 1.5267857142857142
+        },
+        {
+          "label": "q6_disability = لا",
+          "lift": 1.3133640552995391
+        },
+        {
+          "label": "q16_submitted_complaint = نعم",
+          "lift": 1.3133640552995391
+        },
+        {
+          "label": "q7_participation = نعم",
+          "lift": 0.7880184331797234
+        }
+      ],
+      "score": 0.827
+    },
+    {
+      "cluster": 2,
+      "size": 19,
+      "share": 0.3333333333333333,
+      "title": "q12_content_difficulty=صعب | q21_biggest_challenge = الموارد",
+      "kpis": {
+        "SatisfactionIndex": {
+          "mean": 0.4309210479259491,
+          "n": 19
+        },
+        "InclusionIndex": {
+          "mean": 0.3947368562221527,
+          "n": 19
+        },
+        "SafetyIndex": {
+          "mean": 0.4868420958518982,
+          "n": 19
+        },
+        "OutcomeIndex": {
+          "mean": 0.45588234066963196,
+          "n": 17
+        },
+        "CFM_Access": {
+          "rate": 0.7894736842105263,
+          "n": 19
+        },
+        "CFM_Responsiveness": {
+          "rate": 0.42857142857142855,
+          "n": 14
+        }
+      },
+      "parent_modes": [
+        {
+          "parent": "q12_content_difficulty",
+          "mode": "صعب",
+          "lift": 2.076923076923077
+        },
+        {
+          "parent": "q4_education",
+          "mode": "ابتدائي",
+          "lift": 1.8461538461538463
+        },
+        {
+          "parent": "q24_schedule_fit",
+          "mode": "مناسب جدًا",
+          "lift": 1.8
+        },
+        {
+          "parent": "q3_governorate",
+          "mode": "أسوان",
+          "lift": 1.8
+        },
+        {
+          "parent": "q6_disability",
+          "mode": "نعم",
+          "lift": 1.6153846153846154
+        }
+      ],
+      "top_items": [
+        {
+          "label": "q21_biggest_challenge = الموارد",
+          "lift": 1.5
+        },
+        {
+          "label": "q1_gender = ذكر",
+          "lift": 1.5
+        },
+        {
+          "label": "q15_info_complaints = نعم",
+          "lift": 1.40625
+        },
+        {
+          "label": "q16_submitted_complaint = نعم",
+          "lift": 1.3548387096774193
+        },
+        {
+          "label": "q14_consulted = نعم",
+          "lift": 1.2857142857142856
+        }
+      ],
+      "score": 0.916
+    },
+    {
+      "cluster": 3,
+      "size": 13,
+      "share": 0.22807017543859648,
+      "title": "q16_submitted_complaint=لا | q19_use_skills = ربما",
+      "kpis": {
+        "SatisfactionIndex": {
+          "mean": 0.4423076808452606,
+          "n": 13
+        },
+        "InclusionIndex": {
+          "mean": 0.4711538553237915,
+          "n": 13
+        },
+        "SafetyIndex": {
+          "mean": 0.3076923191547394,
+          "n": 13
+        },
+        "OutcomeIndex": {
+          "mean": 0.4615384638309479,
+          "n": 13
+        },
+        "CFM_Access": {
+          "rate": 0.23076923076923078,
+          "n": 13
+        }
+      },
+      "parent_modes": [
+        {
+          "parent": "q16_submitted_complaint",
+          "mode": "لا",
+          "lift": 2.287625418060201
+        },
+        {
+          "parent": "q18_skill_improvement",
+          "mode": "قليلًا",
+          "lift": 2.063348416289593
+        },
+        {
+          "parent": "q24_schedule_fit",
+          "mode": "محايد",
+          "lift": 2.063348416289593
+        },
+        {
+          "parent": "q4_education",
+          "mode": "جامعي",
+          "lift": 1.9730769230769232
+        },
+        {
+          "parent": "q2_age",
+          "mode": "25-34",
+          "lift": 1.8461538461538463
+        }
+      ],
+      "top_items": [
+        {
+          "label": "q19_use_skills = ربما",
+          "lift": 1.7225274725274726
+        },
+        {
+          "label": "q1_gender = أنثى",
+          "lift": 1.6239316239316242
+        },
+        {
+          "label": "q21_biggest_challenge = الوقت",
+          "lift": 1.4615384615384617
+        },
+        {
+          "label": "q6_disability = لا",
+          "lift": 1.2729528535980148
+        },
+        {
+          "label": "q14_consulted = نعم",
+          "lift": 0.5010989010989011
+        }
+      ],
+      "score": 0.907
+    }
+  ],
+  "trends": [],
+  "caveats": [
+    "All associations and rules are descriptive; do not infer causality.",
+    "Privacy guard: cells with n < 5 are suppressed."
+  ],
+  "attachments": {
+    "files": {
+      "desc_stats": "desc_stats.json",
+      "crosstabs": "crosstabs.parquet",
+      "assoc_pairs": "assoc_pairs.csv",
+      "rules": "rules.parquet",
+      "segments": "clusters_profiles.json"
+    },
+    "images": {
+      "assoc_heatmap": "assoc_heatmap.png",
+      "cluster_kpi": "cluster_kpi_heatmap.png"
+    }
+  },
+  "writer": {
+    "tone": "neutral_policy",
+    "language_primary": "ar",
+    "sections_order": [
+      "ExecutiveSummary",
+      "KPIs",
+      "Associations",
+      "Patterns",
+      "Segments",
+      "Trends",
+      "Recommendations"
+    ],
+    "prompts": {
+      "system": "You are a MEAL analyst. Use only supplied numbers. Do not infer causality.",
+      "style_guidelines": [
+        "Start with the 3 strongest highlights by score.",
+        "Always quote n and denominators.",
+        "Flag suppressed metrics as 'insufficient data'.",
+        "Use Arabic labels from 'glossary'."
+      ]
+    }
+  }
+}
